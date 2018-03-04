@@ -10,6 +10,6 @@ import Foundation
 
 public class PlaceholderService: IPlaceholderService {
     public func placeholder() {
-        NSLog("Executing \(#file).\(#function)");
+        NSLog("Executing \(#file).\(#function)")
     }
 }

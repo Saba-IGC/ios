@@ -9,9 +9,9 @@
 import Foundation
 
 class ItemViewModel {
-    let item: Item;
+    let item: Item
 
     init(item: Item) {
-        self.item = item;
+        self.item = item
     }
 }

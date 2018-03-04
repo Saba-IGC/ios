@@ -1,21 +1,24 @@
 PODS:
   - Alamofire (4.6.0)
   - SuperDelegate (0.9.0)
+  - SwiftLint (0.25.0)
   - SwiftyJSON (4.0.0)
   - Swinject (2.1.1)
 
 DEPENDENCIES:
   - Alamofire (~> 4.6.0)
   - SuperDelegate (~> 0.9.0)
+  - SwiftLint (~> 0.25.0)
   - SwiftyJSON (~> 4.0.0)
   - Swinject (~> 2.1.0)
 
 SPEC CHECKSUMS:
   Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
   SuperDelegate: b70c7afddf8525217d0e074b850b8ea3cc6f8abd
+  SwiftLint: e14651157288e9e01d6e1a71db7014fb5744a8ea
   SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
   Swinject: afea49fd95f392b41171669f165842879c48fad6
 
-PODFILE CHECKSUM: 266ba1ae10d7f87e95e5fd63207ebfecafde29c1
+PODFILE CHECKSUM: 3cdfdc3e3a3f6660c4bc969e6cfc297d3747266f
 
 COCOAPODS: 1.4.0
