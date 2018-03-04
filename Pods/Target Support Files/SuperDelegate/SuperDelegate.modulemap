@@ -1,0 +1,6 @@
+framework module SuperDelegate {
+  umbrella header "SuperDelegate-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,6 @@
+framework module Pods_SabaCenter {
+  umbrella header "Pods-SabaCenter-umbrella.h"
+
+  export *
+  module * { export * }
+}
