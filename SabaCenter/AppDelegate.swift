@@ -17,8 +17,8 @@ class AppDelegate: SuperDelegate, ApplicationLaunched {
 
     let container: Container = {
         let container = Container()
-        container.register(IPlaceholderService.self) { _ in PlaceholderService()}
-        container.register(IPlaceholderRepository.self) { resolver in PlaceholderRepository(placeholderService: resolver.resolve(IPlaceholderService.self)!)}
+        container.register(IPlaceholderService.self) { _ in PlaceholderService()}.inObjectScope(.container)
+        container.register(IPlaceholderRepository.self) { resolver in PlaceholderRepository(placeholderService: resolver.resolve(IPlaceholderService.self)!)}.inObjectScope(.container)
         container.register(MainPageViewModel.self) { resolver in MainPageViewModel(placeholderRepo: resolver.resolve(IPlaceholderRepository.self)!) }
         return container
     }()
