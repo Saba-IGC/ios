@@ -15,6 +15,13 @@
 		629C902A204B74E4006E1438 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 629C9029204B74E4006E1438 /* Assets.xcassets */; };
 		629C902D204B74E4006E1438 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 629C902B204B74E4006E1438 /* LaunchScreen.storyboard */; };
 		629C9038204B74E4006E1438 /* SabaCenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629C9037204B74E4006E1438 /* SabaCenterTests.swift */; };
+		629C904F204B79ED006E1438 /* Framework.h in Headers */ = {isa = PBXBuildFile; fileRef = 629C904D204B79ED006E1438 /* Framework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		629C9052204B79ED006E1438 /* Framework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 629C904B204B79ED006E1438 /* Framework.framework */; };
+		629C9053204B79ED006E1438 /* Framework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 629C904B204B79ED006E1438 /* Framework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		629C905D204B7A1F006E1438 /* ViewModelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629C9059204B7A1F006E1438 /* ViewModelFactory.swift */; };
+		629C905E204B7A1F006E1438 /* ITypeResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629C905A204B7A1F006E1438 /* ITypeResolver.swift */; };
+		629C905F204B7A1F006E1438 /* ViewModelBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629C905B204B7A1F006E1438 /* ViewModelBase.swift */; };
+		629C9060204B7A1F006E1438 /* UIViewControllerBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629C905C204B7A1F006E1438 /* UIViewControllerBase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,7 +32,28 @@
 			remoteGlobalIDString = 629C901C204B74E4006E1438;
 			remoteInfo = SabaCenter;
 		};
+		629C9050204B79ED006E1438 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 629C9015204B74E4006E1438 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 629C904A204B79ED006E1438;
+			remoteInfo = Framework;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		629C9057204B79ED006E1438 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				629C9053204B79ED006E1438 /* Framework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		12EDB1F6BB7667F8B142C60C /* Pods-SabaCenter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SabaCenter.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SabaCenter/Pods-SabaCenter.debug.xcconfig"; sourceTree = "<group>"; };
@@ -41,6 +69,13 @@
 		629C9033204B74E4006E1438 /* SabaCenterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SabaCenterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		629C9037204B74E4006E1438 /* SabaCenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SabaCenterTests.swift; sourceTree = "<group>"; };
 		629C9039204B74E4006E1438 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		629C904B204B79ED006E1438 /* Framework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Framework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		629C904D204B79ED006E1438 /* Framework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Framework.h; sourceTree = "<group>"; };
+		629C904E204B79ED006E1438 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		629C9059204B7A1F006E1438 /* ViewModelFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModelFactory.swift; sourceTree = "<group>"; };
+		629C905A204B7A1F006E1438 /* ITypeResolver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ITypeResolver.swift; sourceTree = "<group>"; };
+		629C905B204B7A1F006E1438 /* ViewModelBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModelBase.swift; sourceTree = "<group>"; };
+		629C905C204B7A1F006E1438 /* UIViewControllerBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerBase.swift; sourceTree = "<group>"; };
 		9F3E0E19BC7B1C37853FB55A /* Pods_SabaCenter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SabaCenter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -50,10 +85,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				0FFA25839A7D20FE834F27A1 /* Pods_SabaCenter.framework in Frameworks */,
+				629C9052204B79ED006E1438 /* Framework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		629C9030204B74E4006E1438 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		629C9047204B79ED006E1438 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -85,6 +128,7 @@
 			children = (
 				629C901F204B74E4006E1438 /* SabaCenter */,
 				629C9036204B74E4006E1438 /* SabaCenterTests */,
+				629C904C204B79ED006E1438 /* Framework */,
 				629C901E204B74E4006E1438 /* Products */,
 				016AEB2838793AC09038AD91 /* Pods */,
 				4A2027E3E732A2812B169B91 /* Frameworks */,
@@ -96,6 +140,7 @@
 			children = (
 				629C901D204B74E4006E1438 /* SabaCenter.app */,
 				629C9033204B74E4006E1438 /* SabaCenterTests.xctest */,
+				629C904B204B79ED006E1438 /* Framework.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -123,7 +168,39 @@
 			path = SabaCenterTests;
 			sourceTree = "<group>";
 		};
+		629C904C204B79ED006E1438 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				629C9058204B7A04006E1438 /* mvvm */,
+				629C904D204B79ED006E1438 /* Framework.h */,
+				629C904E204B79ED006E1438 /* Info.plist */,
+			);
+			path = Framework;
+			sourceTree = "<group>";
+		};
+		629C9058204B7A04006E1438 /* mvvm */ = {
+			isa = PBXGroup;
+			children = (
+				629C905A204B7A1F006E1438 /* ITypeResolver.swift */,
+				629C905C204B7A1F006E1438 /* UIViewControllerBase.swift */,
+				629C905B204B7A1F006E1438 /* ViewModelBase.swift */,
+				629C9059204B7A1F006E1438 /* ViewModelFactory.swift */,
+			);
+			path = mvvm;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		629C9048204B79ED006E1438 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				629C904F204B79ED006E1438 /* Framework.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		629C901C204B74E4006E1438 /* SabaCenter */ = {
@@ -136,10 +213,12 @@
 				629C901B204B74E4006E1438 /* Resources */,
 				6DEEBD4635EE2F4511A63964 /* [CP] Embed Pods Frameworks */,
 				37478E7DCBBAD101CF2E6C62 /* [CP] Copy Pods Resources */,
+				629C9057204B79ED006E1438 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				629C9051204B79ED006E1438 /* PBXTargetDependency */,
 			);
 			name = SabaCenter;
 			productName = SabaCenter;
@@ -164,6 +243,24 @@
 			productReference = 629C9033204B74E4006E1438 /* SabaCenterTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		629C904A204B79ED006E1438 /* Framework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 629C9054204B79ED006E1438 /* Build configuration list for PBXNativeTarget "Framework" */;
+			buildPhases = (
+				629C9046204B79ED006E1438 /* Sources */,
+				629C9047204B79ED006E1438 /* Frameworks */,
+				629C9048204B79ED006E1438 /* Headers */,
+				629C9049204B79ED006E1438 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Framework;
+			productName = Framework;
+			productReference = 629C904B204B79ED006E1438 /* Framework.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -183,6 +280,11 @@
 						ProvisioningStyle = Automatic;
 						TestTargetID = 629C901C204B74E4006E1438;
 					};
+					629C904A204B79ED006E1438 = {
+						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = 629C9018204B74E4006E1438 /* Build configuration list for PBXProject "SabaCenter" */;
@@ -200,6 +302,7 @@
 			targets = (
 				629C901C204B74E4006E1438 /* SabaCenter */,
 				629C9032204B74E4006E1438 /* SabaCenterTests */,
+				629C904A204B79ED006E1438 /* Framework */,
 			);
 		};
 /* End PBXProject section */
@@ -216,6 +319,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		629C9031204B74E4006E1438 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		629C9049204B79ED006E1438 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -303,6 +413,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		629C9046204B79ED006E1438 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				629C905D204B7A1F006E1438 /* ViewModelFactory.swift in Sources */,
+				629C9060204B7A1F006E1438 /* UIViewControllerBase.swift in Sources */,
+				629C905E204B7A1F006E1438 /* ITypeResolver.swift in Sources */,
+				629C905F204B7A1F006E1438 /* ViewModelBase.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -310,6 +431,11 @@
 			isa = PBXTargetDependency;
 			target = 629C901C204B74E4006E1438 /* SabaCenter */;
 			targetProxy = 629C9034204B74E4006E1438 /* PBXContainerItemProxy */;
+		};
+		629C9051204B79ED006E1438 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 629C904A204B79ED006E1438 /* Framework */;
+			targetProxy = 629C9050204B79ED006E1438 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -444,6 +570,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 12EDB1F6BB7667F8B142C60C /* Pods-SabaCenter.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SabaCenter/Info.plist;
@@ -459,6 +586,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3BBA944A5C0E23D30B133977 /* Pods-SabaCenter.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SabaCenter/Info.plist;
@@ -502,6 +630,55 @@
 			};
 			name = Release;
 		};
+		629C9055204B79ED006E1438 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Framework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.saba.Framework;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		629C9056204B79ED006E1438 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Framework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.saba.Framework;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -528,6 +705,15 @@
 			buildConfigurations = (
 				629C9040204B74E4006E1438 /* Debug */,
 				629C9041204B74E4006E1438 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		629C9054204B79ED006E1438 /* Build configuration list for PBXNativeTarget "Framework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				629C9055204B79ED006E1438 /* Debug */,
+				629C9056204B79ED006E1438 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
