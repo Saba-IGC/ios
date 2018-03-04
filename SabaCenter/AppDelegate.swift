@@ -15,11 +15,11 @@ import SuperDelegate
 class AppDelegate: SuperDelegate, ApplicationLaunched {
     var window: UIWindow?
 
-    let container : Container = {
-        let container = Container();
+    let container: Container = {
+        let container = Container()
         container.register(IPlaceholderService.self) { _ in PlaceholderService()}
-        container.register(IPlaceholderRepository.self) { r in PlaceholderRepository(placeholderService: r.resolve(IPlaceholderService.self)!)}
-        container.register(MainPageViewModel.self) { r in MainPageViewModel(placeholderRepo: r.resolve(IPlaceholderRepository.self)!) }
+        container.register(IPlaceholderRepository.self) { resolver in PlaceholderRepository(placeholderService: resolver.resolve(IPlaceholderService.self)!)}
+        container.register(MainPageViewModel.self) { resolver in MainPageViewModel(placeholderRepo: resolver.resolve(IPlaceholderRepository.self)!) }
         return container
     }()
 
@@ -34,15 +34,17 @@ class AppDelegate: SuperDelegate, ApplicationLaunched {
 
     func loadInterface(launchItem: LaunchItem) {
         // Override point for customization after application launch.
+        // swiftlint:disable force_cast
         let splitViewController = window!.rootViewController as! UISplitViewController
         let navigationController = splitViewController.viewControllers[splitViewController.viewControllers.count-1] as! UINavigationController
+        // swiftlint:enable force_cast
         navigationController.topViewController!.navigationItem.leftBarButtonItem = splitViewController.displayModeButtonItem
         splitViewController.delegate = self
     }
 }
 
 extension AppDelegate: UISplitViewControllerDelegate {
-    func splitViewController(_ splitViewController: UISplitViewController, collapseSecondary secondaryViewController:UIViewController, onto primaryViewController:UIViewController) -> Bool {
+    func splitViewController(_ splitViewController: UISplitViewController, collapseSecondary secondaryViewController: UIViewController, onto primaryViewController: UIViewController) -> Bool {
         guard let secondaryAsNavController = secondaryViewController as? UINavigationController else { return false }
         guard let topAsDetailController = secondaryAsNavController.topViewController as? DetailViewController else { return false }
         if topAsDetailController.detailItem == nil {
@@ -53,7 +55,7 @@ extension AppDelegate: UISplitViewControllerDelegate {
     }
 }
 
-extension AppDelegate : ITypeResolver {
+extension AppDelegate: ITypeResolver {
     func resolve<T>() -> T? {
         return container.resolve(T.self)
     }

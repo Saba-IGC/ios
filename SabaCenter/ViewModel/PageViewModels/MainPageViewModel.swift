@@ -10,13 +10,13 @@ import Foundation
 import Framework
 
 class MainPageViewModel: ViewModelBase {
-    let placeholderRepo: IPlaceholderRepository;
+    let placeholderRepo: IPlaceholderRepository
 
     init(placeholderRepo: IPlaceholderRepository) {
-        self.placeholderRepo = placeholderRepo;
+        self.placeholderRepo = placeholderRepo
     }
 
-    func placeholder() -> Void {
-        placeholderRepo.placeholder();
+    func placeholder() {
+        placeholderRepo.placeholder()
     }
 }

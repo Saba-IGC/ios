@@ -9,5 +9,5 @@
 import Foundation
 
 public protocol IPlaceholderService {
-    func placeholder() -> Void;
+    func placeholder()
 }

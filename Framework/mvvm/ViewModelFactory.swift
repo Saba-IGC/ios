@@ -9,8 +9,8 @@
 import Foundation
 
 public class ViewModelFactory {
-    public static var resolver : ITypeResolver? = nil
-    
+    public static var resolver: ITypeResolver?
+
     static func resolveViewModel<TViewModel>() -> TViewModel? {
         if let resolver = resolver {
             return resolver.resolve()

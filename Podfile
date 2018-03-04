@@ -10,4 +10,5 @@ target 'SabaCenter' do
   pod 'SwiftyJSON', '~> 4.0.0'
   pod 'Alamofire', '~> 4.6.0'
   pod 'Swinject', '~> 2.1.0'
+  pod 'SwiftLint', '~> 0.25.0'
 end

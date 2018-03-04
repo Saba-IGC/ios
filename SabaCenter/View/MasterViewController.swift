@@ -12,9 +12,8 @@ import Framework
 
 class MasterViewController: UITableViewControllerBase<MainPageViewModel> {
 
-    var detailViewController: DetailViewController? = nil
+    var detailViewController: DetailViewController?
     var objects = [Any]()
-
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,6 +24,7 @@ class MasterViewController: UITableViewControllerBase<MainPageViewModel> {
         navigationItem.rightBarButtonItem = addButton
         if let split = splitViewController {
             let controllers = split.viewControllers
+            // swiftlint:disable:next force_cast
             detailViewController = (controllers[controllers.count-1] as! UINavigationController).topViewController as? DetailViewController
         }
     }
@@ -49,12 +49,14 @@ class MasterViewController: UITableViewControllerBase<MainPageViewModel> {
     // MARK: - Segues
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        viewModel?.placeholder();
+        viewModel?.placeholder()
 
         if segue.identifier == "showDetail" {
             if let indexPath = tableView.indexPathForSelectedRow {
+                // swiftlint:disable force_cast
                 let object = objects[indexPath.row] as! NSDate
                 let controller = (segue.destination as! UINavigationController).topViewController as! DetailViewController
+                // swiftlint:enable force_cast
                 controller.detailItem = object
                 controller.navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem
                 controller.navigationItem.leftItemsSupplementBackButton = true
@@ -75,6 +77,7 @@ class MasterViewController: UITableViewControllerBase<MainPageViewModel> {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
 
+        // swiftlint:disable:next force_cast
         let object = objects[indexPath.row] as! NSDate
         cell.textLabel!.text = object.description
         return cell
@@ -94,6 +97,4 @@ class MasterViewController: UITableViewControllerBase<MainPageViewModel> {
         }
     }
 
-
 }
-

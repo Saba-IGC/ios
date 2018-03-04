@@ -9,13 +9,13 @@
 import Foundation
 
 public class PlaceholderRepository: IPlaceholderRepository {
-    let placeholderService: IPlaceholderService;
+    let placeholderService: IPlaceholderService
 
     init(placeholderService: IPlaceholderService) {
-        self.placeholderService = placeholderService;
+        self.placeholderService = placeholderService
     }
 
     public func placeholder() {
-        placeholderService.placeholder();
+        placeholderService.placeholder()
     }
 }

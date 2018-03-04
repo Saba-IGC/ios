@@ -8,8 +8,8 @@
 
 import UIKit
 
-open class UIViewControllerBase<TViewModel : ViewModelBase> : UIViewController {
-    public let viewModel : TViewModel? = {
+open class UIViewControllerBase<TViewModel: ViewModelBase>: UIViewController {
+    public let viewModel: TViewModel? = {
         return ViewModelFactory.resolveViewModel()
     }()
 }
