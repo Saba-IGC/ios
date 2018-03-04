@@ -11,4 +11,7 @@ target 'SabaCenter' do
   pod 'Alamofire', '~> 4.6.0'
   pod 'Swinject', '~> 2.1.0'
   pod 'SwiftLint', '~> 0.25.0'
+  pod 'PromiseKit', '~> 6.0'
+  pod 'PromiseKit/Alamofire', '~> 6.0'
+  pod 'PromiseKit/CoreLocation', '~> 6.0'
 end
