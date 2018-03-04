@@ -9,14 +9,12 @@
 import UIKit
 import Framework
 
-class DetailViewController: UIViewControllerBase<MainPageViewModel> {
+class DetailViewController: UIViewController {
 
     @IBOutlet weak var detailDescriptionLabel: UILabel!
 
 
     func configureView() {
-        viewModel?.placeholder();
-
         // Update the user interface for the detail item.
         if let detail = detailItem {
             if let label = detailDescriptionLabel {

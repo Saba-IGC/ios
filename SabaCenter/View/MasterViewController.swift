@@ -7,8 +7,10 @@
 //
 
 import UIKit
+import Foundation
+import Framework
 
-class MasterViewController: UITableViewController {
+class MasterViewController: UITableViewControllerBase<MainPageViewModel> {
 
     var detailViewController: DetailViewController? = nil
     var objects = [Any]()
@@ -47,6 +49,8 @@ class MasterViewController: UITableViewController {
     // MARK: - Segues
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        viewModel?.placeholder();
+
         if segue.identifier == "showDetail" {
             if let indexPath = tableView.indexPathForSelectedRow {
                 let object = objects[indexPath.row] as! NSDate

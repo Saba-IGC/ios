@@ -29,6 +29,7 @@
 		629C9073204B7BF4006E1438 /* IPlaceholderRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629C9072204B7BF4006E1438 /* IPlaceholderRepository.swift */; };
 		629C9075204B7C13006E1438 /* PlaceholderRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629C9074204B7C13006E1438 /* PlaceholderRepository.swift */; };
 		629C9077204B7C95006E1438 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629C9076204B7C95006E1438 /* Item.swift */; };
+		629C9079204B850B006E1438 /* UITableViewControllerBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629C9078204B850B006E1438 /* UITableViewControllerBase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +91,7 @@
 		629C9072204B7BF4006E1438 /* IPlaceholderRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPlaceholderRepository.swift; sourceTree = "<group>"; };
 		629C9074204B7C13006E1438 /* PlaceholderRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderRepository.swift; sourceTree = "<group>"; };
 		629C9076204B7C95006E1438 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		629C9078204B850B006E1438 /* UITableViewControllerBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewControllerBase.swift; sourceTree = "<group>"; };
 		9F3E0E19BC7B1C37853FB55A /* Pods_SabaCenter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SabaCenter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -200,6 +202,7 @@
 				629C905C204B7A1F006E1438 /* UIViewControllerBase.swift */,
 				629C905B204B7A1F006E1438 /* ViewModelBase.swift */,
 				629C9059204B7A1F006E1438 /* ViewModelFactory.swift */,
+				629C9078204B850B006E1438 /* UITableViewControllerBase.swift */,
 			);
 			path = mvvm;
 			sourceTree = "<group>";
@@ -510,6 +513,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				629C905D204B7A1F006E1438 /* ViewModelFactory.swift in Sources */,
+				629C9079204B850B006E1438 /* UITableViewControllerBase.swift in Sources */,
 				629C9060204B7A1F006E1438 /* UIViewControllerBase.swift in Sources */,
 				629C905E204B7A1F006E1438 /* ITypeResolver.swift in Sources */,
 				629C905F204B7A1F006E1438 /* ViewModelBase.swift in Sources */,
