@@ -14,4 +14,6 @@ target 'SabaCenter' do
   pod 'PromiseKit', '~> 6.0'
   pod 'PromiseKit/Alamofire', '~> 6.0'
   pod 'PromiseKit/CoreLocation', '~> 6.0'
+  pod 'RxSwift', '~> 4.0'
+  pod 'RxCocoa', '~> 4.0'
 end
