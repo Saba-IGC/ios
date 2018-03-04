@@ -7,11 +7,26 @@
 //
 
 import UIKit
+import Framework
+import Swinject
 import SuperDelegate
 
 @UIApplicationMain
 class AppDelegate: SuperDelegate, ApplicationLaunched {
     var window: UIWindow?
+
+    let container : Container = {
+        let container = Container();
+        container.register(IPlaceholderService.self) { _ in PlaceholderService()}
+        container.register(IPlaceholderRepository.self) { r in PlaceholderRepository(placeholderService: r.resolve(IPlaceholderService.self)!)}
+        container.register(MainPageViewModel.self) { r in MainPageViewModel(placeholderRepo: r.resolve(IPlaceholderRepository.self)!) }
+        return container
+    }()
+
+    override init() {
+        super.init()
+        ViewModelFactory.resolver = self
+    }
 
     func setupApplication() {
         // Setup app model, networking, logging, etc.
@@ -35,5 +50,11 @@ extension AppDelegate: UISplitViewControllerDelegate {
             return true
         }
         return false
+    }
+}
+
+extension AppDelegate : ITypeResolver {
+    func resolve<T>() -> T? {
+        return container.resolve(T.self)
     }
 }

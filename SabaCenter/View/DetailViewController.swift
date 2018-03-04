@@ -7,13 +7,16 @@
 //
 
 import UIKit
+import Framework
 
-class DetailViewController: UIViewController {
+class DetailViewController: UIViewControllerBase<MainPageViewModel> {
 
     @IBOutlet weak var detailDescriptionLabel: UILabel!
 
 
     func configureView() {
+        viewModel?.placeholder();
+
         // Update the user interface for the detail item.
         if let detail = detailItem {
             if let label = detailDescriptionLabel {
@@ -39,7 +42,5 @@ class DetailViewController: UIViewController {
             configureView()
         }
     }
-
-
 }
 

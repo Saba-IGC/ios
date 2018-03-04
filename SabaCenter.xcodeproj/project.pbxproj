@@ -22,6 +22,13 @@
 		629C905E204B7A1F006E1438 /* ITypeResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629C905A204B7A1F006E1438 /* ITypeResolver.swift */; };
 		629C905F204B7A1F006E1438 /* ViewModelBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629C905B204B7A1F006E1438 /* ViewModelBase.swift */; };
 		629C9060204B7A1F006E1438 /* UIViewControllerBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629C905C204B7A1F006E1438 /* UIViewControllerBase.swift */; };
+		629C906A204B7B25006E1438 /* ItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629C9069204B7B25006E1438 /* ItemViewModel.swift */; };
+		629C906C204B7B42006E1438 /* MainPageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629C906B204B7B42006E1438 /* MainPageViewModel.swift */; };
+		629C906E204B7B76006E1438 /* IPlaceholderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629C906D204B7B76006E1438 /* IPlaceholderService.swift */; };
+		629C9070204B7BAB006E1438 /* PlaceholderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629C906F204B7BAB006E1438 /* PlaceholderService.swift */; };
+		629C9073204B7BF4006E1438 /* IPlaceholderRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629C9072204B7BF4006E1438 /* IPlaceholderRepository.swift */; };
+		629C9075204B7C13006E1438 /* PlaceholderRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629C9074204B7C13006E1438 /* PlaceholderRepository.swift */; };
+		629C9077204B7C95006E1438 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629C9076204B7C95006E1438 /* Item.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +83,13 @@
 		629C905A204B7A1F006E1438 /* ITypeResolver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ITypeResolver.swift; sourceTree = "<group>"; };
 		629C905B204B7A1F006E1438 /* ViewModelBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModelBase.swift; sourceTree = "<group>"; };
 		629C905C204B7A1F006E1438 /* UIViewControllerBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerBase.swift; sourceTree = "<group>"; };
+		629C9069204B7B25006E1438 /* ItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemViewModel.swift; sourceTree = "<group>"; };
+		629C906B204B7B42006E1438 /* MainPageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageViewModel.swift; sourceTree = "<group>"; };
+		629C906D204B7B76006E1438 /* IPlaceholderService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPlaceholderService.swift; sourceTree = "<group>"; };
+		629C906F204B7BAB006E1438 /* PlaceholderService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderService.swift; sourceTree = "<group>"; };
+		629C9072204B7BF4006E1438 /* IPlaceholderRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPlaceholderRepository.swift; sourceTree = "<group>"; };
+		629C9074204B7C13006E1438 /* PlaceholderRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderRepository.swift; sourceTree = "<group>"; };
+		629C9076204B7C95006E1438 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		9F3E0E19BC7B1C37853FB55A /* Pods_SabaCenter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SabaCenter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -148,9 +162,10 @@
 		629C901F204B74E4006E1438 /* SabaCenter */ = {
 			isa = PBXGroup;
 			children = (
+				629C9063204B7AA1006E1438 /* View */,
+				629C9062204B7A8D006E1438 /* ViewModel */,
+				629C9061204B7A82006E1438 /* Model */,
 				629C9020204B74E4006E1438 /* AppDelegate.swift */,
-				629C9022204B74E4006E1438 /* MasterViewController.swift */,
-				629C9024204B74E4006E1438 /* DetailViewController.swift */,
 				629C9026204B74E4006E1438 /* Main.storyboard */,
 				629C9029204B74E4006E1438 /* Assets.xcassets */,
 				629C902B204B74E4006E1438 /* LaunchScreen.storyboard */,
@@ -187,6 +202,76 @@
 				629C9059204B7A1F006E1438 /* ViewModelFactory.swift */,
 			);
 			path = mvvm;
+			sourceTree = "<group>";
+		};
+		629C9061204B7A82006E1438 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				629C9068204B7AD3006E1438 /* Services */,
+				629C9067204B7ACD006E1438 /* Repositories */,
+				629C9066204B7AC8006E1438 /* Models */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		629C9062204B7A8D006E1438 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				629C9065204B7AC0006E1438 /* ViewModels */,
+				629C9064204B7AB6006E1438 /* PageViewModels */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		629C9063204B7AA1006E1438 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				629C9022204B74E4006E1438 /* MasterViewController.swift */,
+				629C9024204B74E4006E1438 /* DetailViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		629C9064204B7AB6006E1438 /* PageViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				629C906B204B7B42006E1438 /* MainPageViewModel.swift */,
+			);
+			path = PageViewModels;
+			sourceTree = "<group>";
+		};
+		629C9065204B7AC0006E1438 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				629C9069204B7B25006E1438 /* ItemViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		629C9066204B7AC8006E1438 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				629C9076204B7C95006E1438 /* Item.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		629C9067204B7ACD006E1438 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				629C9072204B7BF4006E1438 /* IPlaceholderRepository.swift */,
+				629C9074204B7C13006E1438 /* PlaceholderRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		629C9068204B7AD3006E1438 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				629C906D204B7B76006E1438 /* IPlaceholderService.swift */,
+				629C906F204B7BAB006E1438 /* PlaceholderService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -399,7 +484,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				629C9077204B7C95006E1438 /* Item.swift in Sources */,
+				629C9070204B7BAB006E1438 /* PlaceholderService.swift in Sources */,
 				629C9025204B74E4006E1438 /* DetailViewController.swift in Sources */,
+				629C906E204B7B76006E1438 /* IPlaceholderService.swift in Sources */,
+				629C9075204B7C13006E1438 /* PlaceholderRepository.swift in Sources */,
+				629C9073204B7BF4006E1438 /* IPlaceholderRepository.swift in Sources */,
+				629C906A204B7B25006E1438 /* ItemViewModel.swift in Sources */,
+				629C906C204B7B42006E1438 /* MainPageViewModel.swift in Sources */,
 				629C9023204B74E4006E1438 /* MasterViewController.swift in Sources */,
 				629C9021204B74E4006E1438 /* AppDelegate.swift in Sources */,
 			);
