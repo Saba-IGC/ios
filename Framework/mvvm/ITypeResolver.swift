@@ -8,6 +8,6 @@
 
 import Foundation
 
-public protocol ITypeResolver {
+public protocol ITypeResolver: class {
     func resolve<T>() -> T?
 }

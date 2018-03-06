@@ -9,7 +9,7 @@
 import UIKit
 import Framework
 
-class DetailViewController: UIViewController {
+class DetailViewController: UIViewControllerBase<DetailPageViewModel> {
 
     @IBOutlet weak var detailDescriptionLabel: UILabel!
 
@@ -38,5 +38,9 @@ class DetailViewController: UIViewController {
             // Update the view.
             configureView()
         }
+    }
+
+    @IBAction func navigateButtonTapped(_ sender: UIButton) {
+        viewModel?.testNavigate()
     }
 }
