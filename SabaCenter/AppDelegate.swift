@@ -19,7 +19,10 @@ class AppDelegate: SuperDelegate, ApplicationLaunched {
         let container = Container()
         container.register(IPlaceholderService.self) { _ in PlaceholderService()}.inObjectScope(.container)
         container.register(IPlaceholderRepository.self) { resolver in PlaceholderRepository(placeholderService: resolver.resolve(IPlaceholderService.self)!)}.inObjectScope(.container)
-        container.register(MainPageViewModel.self) { resolver in MainPageViewModel(placeholderRepo: resolver.resolve(IPlaceholderRepository.self)!) }
+        container.register(INavigationService.self) { _ in NavigationService()}.inObjectScope(.container)
+        container.register(MainPageViewModel.self) { resolver in MainPageViewModel(placeholderRepo: resolver.resolve(IPlaceholderRepository.self)!, navigationService: resolver.resolve(INavigationService.self)!) }
+        container.register(DetailPageViewModel.self) { resolver in DetailPageViewModel(navigationService: resolver.resolve(INavigationService.self)!) }
+        container.register(NavigateTestPageViewModel.self) { _ in NavigateTestPageViewModel() }
         return container
     }()
 

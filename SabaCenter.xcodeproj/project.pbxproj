@@ -31,6 +31,16 @@
 		629C9077204B7C95006E1438 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629C9076204B7C95006E1438 /* Item.swift */; };
 		629C9079204B850B006E1438 /* UITableViewControllerBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629C9078204B850B006E1438 /* UITableViewControllerBase.swift */; };
 		629C907C204BAC0C006E1438 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 629C907B204BAC0C006E1438 /* .swiftlint.yml */; };
+		629C907F204BE70B006E1438 /* INavigationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629C907E204BE70B006E1438 /* INavigationService.swift */; };
+		629C9081204BE7A5006E1438 /* INavigable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629C9080204BE7A5006E1438 /* INavigable.swift */; };
+		629C9083204BEA80006E1438 /* NavigationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629C9082204BEA80006E1438 /* NavigationService.swift */; };
+		629C9087204BF44D006E1438 /* IViewModelAwareController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629C9086204BF44D006E1438 /* IViewModelAwareController.swift */; };
+		629C9089204BF71F006E1438 /* INavigationAwareViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629C9088204BF71F006E1438 /* INavigationAwareViewModel.swift */; };
+		629C908B204BFA7F006E1438 /* INavigatingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629C908A204BFA7F006E1438 /* INavigatingViewModel.swift */; };
+		629C908D204E5AD2006E1438 /* DetailPageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629C908C204E5AD2006E1438 /* DetailPageViewModel.swift */; };
+		629C9093204E7F67006E1438 /* NavigateTestPageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629C9092204E7F67006E1438 /* NavigateTestPageViewModel.swift */; };
+		629C9095204E83E6006E1438 /* NavigateTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629C9094204E83E6006E1438 /* NavigateTestViewController.swift */; };
+		629C909A204E8B18006E1438 /* UINavigationControllerBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629C9099204E8B18006E1438 /* UINavigationControllerBase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +104,16 @@
 		629C9076204B7C95006E1438 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		629C9078204B850B006E1438 /* UITableViewControllerBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewControllerBase.swift; sourceTree = "<group>"; };
 		629C907B204BAC0C006E1438 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .swiftlint.yml; sourceTree = "<group>"; };
+		629C907E204BE70B006E1438 /* INavigationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = INavigationService.swift; sourceTree = "<group>"; };
+		629C9080204BE7A5006E1438 /* INavigable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = INavigable.swift; sourceTree = "<group>"; };
+		629C9082204BEA80006E1438 /* NavigationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationService.swift; sourceTree = "<group>"; };
+		629C9086204BF44D006E1438 /* IViewModelAwareController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IViewModelAwareController.swift; sourceTree = "<group>"; };
+		629C9088204BF71F006E1438 /* INavigationAwareViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = INavigationAwareViewModel.swift; sourceTree = "<group>"; };
+		629C908A204BFA7F006E1438 /* INavigatingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = INavigatingViewModel.swift; sourceTree = "<group>"; };
+		629C908C204E5AD2006E1438 /* DetailPageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPageViewModel.swift; sourceTree = "<group>"; };
+		629C9092204E7F67006E1438 /* NavigateTestPageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigateTestPageViewModel.swift; sourceTree = "<group>"; };
+		629C9094204E83E6006E1438 /* NavigateTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigateTestViewController.swift; sourceTree = "<group>"; };
+		629C9099204E8B18006E1438 /* UINavigationControllerBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationControllerBase.swift; sourceTree = "<group>"; };
 		9F3E0E19BC7B1C37853FB55A /* Pods_SabaCenter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SabaCenter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -191,6 +211,7 @@
 		629C904C204B79ED006E1438 /* Framework */ = {
 			isa = PBXGroup;
 			children = (
+				629C907D204BE6F6006E1438 /* navigation */,
 				629C9058204B7A04006E1438 /* mvvm */,
 				629C904D204B79ED006E1438 /* Framework.h */,
 				629C904E204B79ED006E1438 /* Info.plist */,
@@ -206,6 +227,7 @@
 				629C905B204B7A1F006E1438 /* ViewModelBase.swift */,
 				629C9059204B7A1F006E1438 /* ViewModelFactory.swift */,
 				629C9078204B850B006E1438 /* UITableViewControllerBase.swift */,
+				629C9086204BF44D006E1438 /* IViewModelAwareController.swift */,
 			);
 			path = mvvm;
 			sourceTree = "<group>";
@@ -234,6 +256,7 @@
 			children = (
 				629C9022204B74E4006E1438 /* MasterViewController.swift */,
 				629C9024204B74E4006E1438 /* DetailViewController.swift */,
+				629C9094204E83E6006E1438 /* NavigateTestViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -242,6 +265,8 @@
 			isa = PBXGroup;
 			children = (
 				629C906B204B7B42006E1438 /* MainPageViewModel.swift */,
+				629C908C204E5AD2006E1438 /* DetailPageViewModel.swift */,
+				629C9092204E7F67006E1438 /* NavigateTestPageViewModel.swift */,
 			);
 			path = PageViewModels;
 			sourceTree = "<group>";
@@ -278,6 +303,19 @@
 				629C906F204B7BAB006E1438 /* PlaceholderService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		629C907D204BE6F6006E1438 /* navigation */ = {
+			isa = PBXGroup;
+			children = (
+				629C907E204BE70B006E1438 /* INavigationService.swift */,
+				629C9080204BE7A5006E1438 /* INavigable.swift */,
+				629C9082204BEA80006E1438 /* NavigationService.swift */,
+				629C9088204BF71F006E1438 /* INavigationAwareViewModel.swift */,
+				629C908A204BFA7F006E1438 /* INavigatingViewModel.swift */,
+				629C9099204E8B18006E1438 /* UINavigationControllerBase.swift */,
+			);
+			path = navigation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -512,11 +550,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				629C9077204B7C95006E1438 /* Item.swift in Sources */,
+				629C9095204E83E6006E1438 /* NavigateTestViewController.swift in Sources */,
 				629C9070204B7BAB006E1438 /* PlaceholderService.swift in Sources */,
+				629C9093204E7F67006E1438 /* NavigateTestPageViewModel.swift in Sources */,
 				629C9025204B74E4006E1438 /* DetailViewController.swift in Sources */,
 				629C906E204B7B76006E1438 /* IPlaceholderService.swift in Sources */,
 				629C9075204B7C13006E1438 /* PlaceholderRepository.swift in Sources */,
 				629C9073204B7BF4006E1438 /* IPlaceholderRepository.swift in Sources */,
+				629C908D204E5AD2006E1438 /* DetailPageViewModel.swift in Sources */,
 				629C906A204B7B25006E1438 /* ItemViewModel.swift in Sources */,
 				629C906C204B7B42006E1438 /* MainPageViewModel.swift in Sources */,
 				629C9023204B74E4006E1438 /* MasterViewController.swift in Sources */,
@@ -537,10 +578,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				629C905D204B7A1F006E1438 /* ViewModelFactory.swift in Sources */,
+				629C9087204BF44D006E1438 /* IViewModelAwareController.swift in Sources */,
+				629C908B204BFA7F006E1438 /* INavigatingViewModel.swift in Sources */,
+				629C9081204BE7A5006E1438 /* INavigable.swift in Sources */,
+				629C909A204E8B18006E1438 /* UINavigationControllerBase.swift in Sources */,
 				629C9079204B850B006E1438 /* UITableViewControllerBase.swift in Sources */,
+				629C9089204BF71F006E1438 /* INavigationAwareViewModel.swift in Sources */,
+				629C9083204BEA80006E1438 /* NavigationService.swift in Sources */,
 				629C9060204B7A1F006E1438 /* UIViewControllerBase.swift in Sources */,
 				629C905E204B7A1F006E1438 /* ITypeResolver.swift in Sources */,
 				629C905F204B7A1F006E1438 /* ViewModelBase.swift in Sources */,
+				629C907F204BE70B006E1438 /* INavigationService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

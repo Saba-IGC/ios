@@ -9,11 +9,13 @@
 import Foundation
 import Framework
 
-class MainPageViewModel: ViewModelBase {
+class MainPageViewModel: ViewModelBase, INavigatingViewModel {
+    let navigationService: INavigationService
     let placeholderRepo: IPlaceholderRepository
 
-    init(placeholderRepo: IPlaceholderRepository) {
+    init(placeholderRepo: IPlaceholderRepository, navigationService: INavigationService) {
         self.placeholderRepo = placeholderRepo
+        self.navigationService = navigationService
     }
 
     func placeholder() {
