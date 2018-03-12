@@ -14,6 +14,12 @@
 		130DEBE52054BD7A003F7811 /* ForumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130DEBE42054BD7A003F7811 /* ForumViewController.swift */; };
 		130DEBE72054BDB1003F7811 /* AskQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130DEBE62054BDB1003F7811 /* AskQuestionViewController.swift */; };
 		130DEBE92054BDEE003F7811 /* QuestionDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130DEBE82054BDEE003F7811 /* QuestionDetailViewController.swift */; };
+		1365551A2056349200C4457A /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 136555192056349200C4457A /* HomeViewModel.swift */; };
+		1365551C205648C700C4457A /* LectureViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1365551B205648C700C4457A /* LectureViewModel.swift */; };
+		1365551E205650A900C4457A /* ScheduleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1365551D205650A900C4457A /* ScheduleViewModel.swift */; };
+		13655520205654B700C4457A /* AskQuestionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1365551F205654B700C4457A /* AskQuestionViewModel.swift */; };
+		13655522205656D100C4457A /* QuestionDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13655521205656D100C4457A /* QuestionDetailViewModel.swift */; };
+		13655524205658D100C4457A /* ForumViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13655523205658D100C4457A /* ForumViewModel.swift */; };
 		629C9021204B74E4006E1438 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629C9020204B74E4006E1438 /* AppDelegate.swift */; };
 		629C9023204B74E4006E1438 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629C9022204B74E4006E1438 /* MasterViewController.swift */; };
 		629C9025204B74E4006E1438 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629C9024204B74E4006E1438 /* DetailViewController.swift */; };
@@ -88,6 +94,12 @@
 		130DEBE42054BD7A003F7811 /* ForumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumViewController.swift; sourceTree = "<group>"; };
 		130DEBE62054BDB1003F7811 /* AskQuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskQuestionViewController.swift; sourceTree = "<group>"; };
 		130DEBE82054BDEE003F7811 /* QuestionDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionDetailViewController.swift; sourceTree = "<group>"; };
+		136555192056349200C4457A /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		1365551B205648C700C4457A /* LectureViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LectureViewModel.swift; sourceTree = "<group>"; };
+		1365551D205650A900C4457A /* ScheduleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewModel.swift; sourceTree = "<group>"; };
+		1365551F205654B700C4457A /* AskQuestionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskQuestionViewModel.swift; sourceTree = "<group>"; };
+		13655521205656D100C4457A /* QuestionDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionDetailViewModel.swift; sourceTree = "<group>"; };
+		13655523205658D100C4457A /* ForumViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumViewModel.swift; sourceTree = "<group>"; };
 		3BBA944A5C0E23D30B133977 /* Pods-SabaCenter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SabaCenter.release.xcconfig"; path = "Pods/Target Support Files/Pods-SabaCenter/Pods-SabaCenter.release.xcconfig"; sourceTree = "<group>"; };
 		629C901D204B74E4006E1438 /* SabaCenter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SabaCenter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		629C9020204B74E4006E1438 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -282,9 +294,15 @@
 		629C9064204B7AB6006E1438 /* PageViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				13655521205656D100C4457A /* QuestionDetailViewModel.swift */,
 				629C906B204B7B42006E1438 /* MainPageViewModel.swift */,
 				629C908C204E5AD2006E1438 /* DetailPageViewModel.swift */,
 				629C9092204E7F67006E1438 /* NavigateTestPageViewModel.swift */,
+				136555192056349200C4457A /* HomeViewModel.swift */,
+				1365551B205648C700C4457A /* LectureViewModel.swift */,
+				1365551D205650A900C4457A /* ScheduleViewModel.swift */,
+				1365551F205654B700C4457A /* AskQuestionViewModel.swift */,
+				13655523205658D100C4457A /* ForumViewModel.swift */,
 			);
 			path = PageViewModels;
 			sourceTree = "<group>";
@@ -570,18 +588,24 @@
 				629C9077204B7C95006E1438 /* Item.swift in Sources */,
 				130DEBE12054BC9B003F7811 /* LectureViewController.swift in Sources */,
 				629C9095204E83E6006E1438 /* NavigateTestViewController.swift in Sources */,
+				1365551C205648C700C4457A /* LectureViewModel.swift in Sources */,
+				1365551A2056349200C4457A /* HomeViewModel.swift in Sources */,
 				130DEBE32054BD18003F7811 /* ScheduleViewController.swift in Sources */,
 				130DEBE52054BD7A003F7811 /* ForumViewController.swift in Sources */,
 				629C9070204B7BAB006E1438 /* PlaceholderService.swift in Sources */,
 				629C9093204E7F67006E1438 /* NavigateTestPageViewModel.swift in Sources */,
+				13655520205654B700C4457A /* AskQuestionViewModel.swift in Sources */,
 				629C9025204B74E4006E1438 /* DetailViewController.swift in Sources */,
 				130DEBDF2054BAD8003F7811 /* HomeViewController.swift in Sources */,
 				629C906E204B7B76006E1438 /* IPlaceholderService.swift in Sources */,
 				629C9075204B7C13006E1438 /* PlaceholderRepository.swift in Sources */,
 				629C9073204B7BF4006E1438 /* IPlaceholderRepository.swift in Sources */,
+				13655522205656D100C4457A /* QuestionDetailViewModel.swift in Sources */,
 				629C908D204E5AD2006E1438 /* DetailPageViewModel.swift in Sources */,
 				629C906A204B7B25006E1438 /* ItemViewModel.swift in Sources */,
 				130DEBE72054BDB1003F7811 /* AskQuestionViewController.swift in Sources */,
+				1365551E205650A900C4457A /* ScheduleViewModel.swift in Sources */,
+				13655524205658D100C4457A /* ForumViewModel.swift in Sources */,
 				629C906C204B7B42006E1438 /* MainPageViewModel.swift in Sources */,
 				629C9023204B74E4006E1438 /* MasterViewController.swift in Sources */,
 				130DEBE92054BDEE003F7811 /* QuestionDetailViewController.swift in Sources */,
