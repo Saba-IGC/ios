@@ -57,6 +57,12 @@
 		629C9093204E7F67006E1438 /* NavigateTestPageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629C9092204E7F67006E1438 /* NavigateTestPageViewModel.swift */; };
 		629C9095204E83E6006E1438 /* NavigateTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629C9094204E83E6006E1438 /* NavigateTestViewController.swift */; };
 		629C909A204E8B18006E1438 /* UINavigationControllerBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629C9099204E8B18006E1438 /* UINavigationControllerBase.swift */; };
+		62E882682067245500BDBE47 /* ICalendarEventRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E882672067245500BDBE47 /* ICalendarEventRepository.swift */; };
+		62E8826A2067246B00BDBE47 /* IDailyPrayerRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E882692067246B00BDBE47 /* IDailyPrayerRepository.swift */; };
+		62E8826C2067247F00BDBE47 /* ITriviaRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E8826B2067247F00BDBE47 /* ITriviaRepository.swift */; };
+		62E8826E206724A500BDBE47 /* ILectureRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E8826D206724A500BDBE47 /* ILectureRepository.swift */; };
+		62E88270206724B600BDBE47 /* IQuestionRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E8826F206724B600BDBE47 /* IQuestionRepository.swift */; };
+		62E882722067287600BDBE47 /* CalendarEventItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E882712067287600BDBE47 /* CalendarEventItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -146,6 +152,12 @@
 		629C9092204E7F67006E1438 /* NavigateTestPageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigateTestPageViewModel.swift; sourceTree = "<group>"; };
 		629C9094204E83E6006E1438 /* NavigateTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigateTestViewController.swift; sourceTree = "<group>"; };
 		629C9099204E8B18006E1438 /* UINavigationControllerBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationControllerBase.swift; sourceTree = "<group>"; };
+		62E882672067245500BDBE47 /* ICalendarEventRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICalendarEventRepository.swift; sourceTree = "<group>"; };
+		62E882692067246B00BDBE47 /* IDailyPrayerRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDailyPrayerRepository.swift; sourceTree = "<group>"; };
+		62E8826B2067247F00BDBE47 /* ITriviaRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ITriviaRepository.swift; sourceTree = "<group>"; };
+		62E8826D206724A500BDBE47 /* ILectureRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ILectureRepository.swift; sourceTree = "<group>"; };
+		62E8826F206724B600BDBE47 /* IQuestionRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IQuestionRepository.swift; sourceTree = "<group>"; };
+		62E882712067287600BDBE47 /* CalendarEventItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarEventItem.swift; sourceTree = "<group>"; };
 		9F3E0E19BC7B1C37853FB55A /* Pods_SabaCenter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SabaCenter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -331,6 +343,7 @@
 				13971A84205F0062001F51AE /* Hadith.swift */,
 				13971A88205F1200001F51AE /* Lecture.swift */,
 				13971A8A205F1342001F51AE /* Question.swift */,
+				62E882712067287600BDBE47 /* CalendarEventItem.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -340,6 +353,11 @@
 			children = (
 				629C9072204B7BF4006E1438 /* IPlaceholderRepository.swift */,
 				629C9074204B7C13006E1438 /* PlaceholderRepository.swift */,
+				62E882672067245500BDBE47 /* ICalendarEventRepository.swift */,
+				62E882692067246B00BDBE47 /* IDailyPrayerRepository.swift */,
+				62E8826B2067247F00BDBE47 /* ITriviaRepository.swift */,
+				62E8826D206724A500BDBE47 /* ILectureRepository.swift */,
+				62E8826F206724B600BDBE47 /* IQuestionRepository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -599,10 +617,14 @@
 			files = (
 				629C9077204B7C95006E1438 /* Item.swift in Sources */,
 				130DEBE12054BC9B003F7811 /* LectureViewController.swift in Sources */,
+				62E8826A2067246B00BDBE47 /* IDailyPrayerRepository.swift in Sources */,
+				62E882682067245500BDBE47 /* ICalendarEventRepository.swift in Sources */,
 				629C9095204E83E6006E1438 /* NavigateTestViewController.swift in Sources */,
 				13971A8B205F1342001F51AE /* Question.swift in Sources */,
 				1365551C205648C700C4457A /* LecturePageViewModel.swift in Sources */,
 				13971A89205F1200001F51AE /* Lecture.swift in Sources */,
+				62E8826C2067247F00BDBE47 /* ITriviaRepository.swift in Sources */,
+				62E88270206724B600BDBE47 /* IQuestionRepository.swift in Sources */,
 				1365551A2056349200C4457A /* HomePageViewModel.swift in Sources */,
 				130DEBE32054BD18003F7811 /* ScheduleViewController.swift in Sources */,
 				130DEBE52054BD7A003F7811 /* ForumViewController.swift in Sources */,
@@ -620,12 +642,14 @@
 				629C908D204E5AD2006E1438 /* DetailPageViewModel.swift in Sources */,
 				629C906A204B7B25006E1438 /* ItemViewModel.swift in Sources */,
 				130DEBE72054BDB1003F7811 /* AskViewController.swift in Sources */,
+				62E882722067287600BDBE47 /* CalendarEventItem.swift in Sources */,
 				1365551E205650A900C4457A /* SchedulePageViewModel.swift in Sources */,
 				13655524205658D100C4457A /* ForumPageViewModel.swift in Sources */,
 				629C906C204B7B42006E1438 /* MainPageViewModel.swift in Sources */,
 				629C9023204B74E4006E1438 /* MasterViewController.swift in Sources */,
 				130DEBE92054BDEE003F7811 /* QuestionDetailViewController.swift in Sources */,
 				629C9021204B74E4006E1438 /* AppDelegate.swift in Sources */,
+				62E8826E206724A500BDBE47 /* ILectureRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
