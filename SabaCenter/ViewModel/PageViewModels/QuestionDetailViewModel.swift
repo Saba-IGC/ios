@@ -1,5 +1,5 @@
 //
-//  QuestionDetailViewModel.swift
+//  QuestionDetailPageViewModel.swift
 //  SabaCenter
 //
 //  Created by Mohsen Hosseini on 3/11/18.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-class QuestionDetailViewModel : ViewModelBase, INavigatingViewModel
+class QuestionDetailPageViewModel : ViewModelBase, INavigatingViewModel
 {
     func getQuestionTitle () -> String
     {

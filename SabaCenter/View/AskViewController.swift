@@ -1,5 +1,5 @@
 //
-//  AskQuestionViewController.swift
+//  AskPageViewController.swift
 //  SabaCenter
 //
 //  Created by Mohsen Hosseini on 3/10/18.
@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class AskQuestionViewController : UIViewController
+class AskPageViewController : UIViewController
 {
     @IBOutlet weak var titleTextField: UITextView!
     @IBOutlet weak var descriptionTextField: UITextView!

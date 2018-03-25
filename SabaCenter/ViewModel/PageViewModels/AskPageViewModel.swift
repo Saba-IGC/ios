@@ -1,5 +1,5 @@
 //
-//  AskQuestionViewModel.swift
+//  AskPageViewModel.swift
 //  SabaCenter
 //
 //  Created by Mohsen Hosseini on 3/11/18.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-class AskQuestionViewModel : ViewModelBase, INavigatingViewModel
+class AskPageViewModel : ViewModelBase, INavigatingViewModel
 {
     func submitQuestion ()
     {

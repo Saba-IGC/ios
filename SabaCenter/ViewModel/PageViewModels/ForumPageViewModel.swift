@@ -1,5 +1,5 @@
 //
-//  ForumViewModel.swift
+//  ForumPageViewModel.swift
 //  SabaCenter
 //
 //  Created by Mohsen Hosseini on 3/11/18.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-class ForumViewModel : ViewModelBase, INavigatingViewModel
+class ForumPageViewModel : ViewModelBase, INavigatingViewModel
 {
     func getListOfKeyWords () -> [String]
     {

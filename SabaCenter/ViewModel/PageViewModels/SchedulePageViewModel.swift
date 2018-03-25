@@ -1,5 +1,5 @@
 //
-//  ScheduleViewModel.swift
+//  SchedulePageViewModel.swift
 //  SabaCenter
 //
 //  Created by Mohsen Hosseini on 3/11/18.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-class ScheduleViewModel: ViewModelBase, INavigatingViewModel
+class SchedulePageViewModel: ViewModelBase, INavigatingViewModel
 {
     func getListOfEventDays ()
     {
@@ -25,5 +25,6 @@ class ScheduleViewModel: ViewModelBase, INavigatingViewModel
           - Event names
           - Event items (stuff happening within event)
           - Event descriptions
+         */
     }
 }
