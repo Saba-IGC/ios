@@ -10,9 +10,9 @@ import Foundation
 
 class Hadith
 {
-    var description: String;
-    var source: String;
-    var quotee: String;
-    var occurenceCounter: Int;
-    var viewCounter: Int;
+    var description: String
+    var source: String
+    var quotee: String
+    var occurenceCounter: Int
+    var viewCounter: Int
 }

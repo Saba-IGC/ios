@@ -13,4 +13,5 @@ class ScheduleItem
     var date: Date
     var description: String
     enum Importance { case normal; case high}
+    var importance: Importance
 }

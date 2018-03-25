@@ -13,6 +13,6 @@ class Lecture
     var lecturerName: String
     var title: String
     var date: Date
-    var videoURL: String;
-    //var audioFile
+    var videoUrl: String
+    var audioUrl: String
 }
