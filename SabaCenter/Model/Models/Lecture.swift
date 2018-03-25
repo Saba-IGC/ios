@@ -8,11 +8,10 @@
 
 import Foundation
 
-class Lecture
-{
-    var lecturerName: String
-    var title: String
-    var date: Date
-    var videoUrl: String
-    var audioUrl: String
+class Lecture {
+    var lecturerName: String = ""
+    var title: String = ""
+    var date: Date = Date()
+    var videoUrl: String = ""
+    var audioUrl: String = ""
 }

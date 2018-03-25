@@ -7,19 +7,17 @@
 //
 
 import Foundation
+import Framework
 
-class SchedulePageViewModel: ViewModelBase, INavigatingViewModel
-{
-    func getListOfEventDays ()
-    {
+class SchedulePageViewModel: ViewModelBase {
+    func getListOfEventDays () {
         /* Each event day can have a list of events
            Each event has a description, time and duration
            The table would have a cell for each day,
            with each cell broken down into smaller sub sections for each event */
     }
-    
-    func searchEvents ()
-    {
+
+    func searchEvents () {
         /*
          Take a look at:
           - Event names

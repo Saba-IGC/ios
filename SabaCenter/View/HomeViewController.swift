@@ -9,8 +9,7 @@
 import Foundation
 import UIKit
 
-class HomeViewController : UIViewController
-{
+class HomeViewController: UIViewController {
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var countDownLabel: UILabel!
     @IBOutlet weak var eventLabel: UILabel!

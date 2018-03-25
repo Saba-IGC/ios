@@ -9,14 +9,12 @@
 import Foundation
 import UIKit
 
-class ForumViewController : UIViewController
-{
+class ForumViewController: UIViewController {
     @IBOutlet weak var searchTextField: UITextField!
     @IBOutlet weak var questionsTableView: UITableView!
 
-    @IBAction func searchTextFieldEditingChanged(_ sender: UITextField)
-    {
-        print(sender.text)
+    @IBAction func searchTextFieldEditingChanged(_ sender: UITextField) {
+        print(sender.text!)
     }
-    
+
 }

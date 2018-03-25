@@ -7,25 +7,24 @@
 //
 
 import Foundation
+import Framework
 
-class ForumPageViewModel : ViewModelBase, INavigatingViewModel
-{
-    func getListOfKeyWords () -> [String]
-    {
+class ForumPageViewModel: ViewModelBase {
+    func getListOfKeyWords () -> [String] {
         // Return keywords for table indexing
-        return [String]
+        return []
     }
-    
-    func getListOfQuestionTitles () -> [String]
-    {
+
+    func getListOfQuestionTitles () -> [String] {
         // Return question titles for a preview on each cell
-        return [String]
+        return []
     }
-    
-    func searchQuestions () -> Int
-    {
+
+    func searchQuestions () -> Int {
         /* Do a search for either keywords, question title, or both
         /Searching for question titles or keywords can be improved with the
         /Levenshtein distance algorithm */
+
+        return 0
     }
 }

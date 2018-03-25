@@ -7,16 +7,14 @@
 //
 
 import Foundation
+import Framework
 
-class QuestionDetailPageViewModel : ViewModelBase, INavigatingViewModel
-{
-    func getQuestionTitle () -> String
-    {
+class QuestionDetailPageViewModel: ViewModelBase {
+    func getQuestionTitle () -> String {
         return "Title"
     }
-    
-    func getQuestionDescription () -> String
-    {
+
+    func getQuestionDescription () -> String {
         return "Description"
     }
 }
