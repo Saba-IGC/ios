@@ -9,8 +9,7 @@
 import Foundation
 import UIKit
 
-class QuestionDetailViewController : UIViewController
-{
+class QuestionDetailViewController: UIViewController {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UITextView!
 }

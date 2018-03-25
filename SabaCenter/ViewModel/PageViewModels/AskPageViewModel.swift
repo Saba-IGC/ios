@@ -7,27 +7,26 @@
 //
 
 import Foundation
+import Framework
 
-class AskPageViewModel : ViewModelBase, INavigatingViewModel
-{
-    func submitQuestion ()
-    {
+class AskPageViewModel: ViewModelBase {
+    func submitQuestion () {
         /*
          - break down the question into whatever parameters the website is         looking for
          - Submit question to the website
          */
     }
-    
-    func getListOfKeyWords () -> [String]
-    {
+
+    func getListOfKeyWords () -> [String] {
         /*
             - Get a list of keywords, probably composed of the keywords on the site and some more
             - return the list
         */
+
+        return []
     }
-    
-    func addANewKeyWord ()
-    {
+
+    func addANewKeyWord () {
         /*
             - If theres a new keyword that the user added,
             (we dont have it in the list)

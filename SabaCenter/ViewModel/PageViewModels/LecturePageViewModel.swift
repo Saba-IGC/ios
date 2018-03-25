@@ -6,10 +6,11 @@
 //  Copyright © 2018 Saba. All rights reserved.
 //
 
-class LecturePageViewModel : ViewModelBase, INavigatingViewModel
-{
-    func getLectureList ()
-    {
+import Foundation
+import Framework
+
+class LecturePageViewModel: ViewModelBase {
+    func getLectureList () {
         /*
          Lecture items should probably have:
          - Date
@@ -17,27 +18,25 @@ class LecturePageViewModel : ViewModelBase, INavigatingViewModel
          - Title
          */
     }
-    
-    func getLinkToLiveStream () -> String
-    {
+
+    func getLinkToLiveStream () -> String {
         return "Link to youtube live stream"
     }
-    
-    func sortLecturesBy (sortParameter: String)
-    {
-        switch (sortParameter)
-        {
-            default:
-                return;
+
+    func sortLecturesBy (sortParameter: String) {
+        switch sortParameter {
+        default:
+            return
         }
     }
-    
-    func searchLectures (searchInput: String) -> Int
-    {
+
+    func searchLectures (searchInput: String) -> Int {
         /*
          Take a look at:
-            - Titles
-            - Speakers
-        */
+         - Titles
+         - Speakers
+         */
+
+        return 0
     }
 }

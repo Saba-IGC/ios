@@ -8,11 +8,10 @@
 
 import Foundation
 
-class Hadith
-{
-    var description: String
-    var source: String
-    var quotee: String
-    var occurenceCounter: Int
-    var viewCounter: Int
+class Hadith {
+    var description: String = ""
+    var source: String = ""
+    var quotee: String = ""
+    var occurenceCounter: Int = 0
+    var viewCounter: Int = 0
 }

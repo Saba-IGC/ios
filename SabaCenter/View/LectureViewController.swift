@@ -9,13 +9,11 @@
 import Foundation
 import UIKit
 
-class LectureViewController : UIViewController
-{
+class LectureViewController: UIViewController {
     @IBOutlet weak var liveStreamButton: UIButton!
     @IBOutlet weak var lecturesTableView: UITableView!
-    
-    @IBAction func liveStreamButtonTouchUpInside(_ sender: UIButton)
-    {
-        
+
+    @IBAction func liveStreamButtonTouchUpInside(_ sender: UIButton) {
+
     }
 }
