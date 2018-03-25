@@ -1,12 +1,12 @@
 //
-//  LectureViewModel.swift
+//  LecturePageViewModel.swift
 //  SabaCenter
 //
 //  Created by Mohsen Hosseini on 3/11/18.
 //  Copyright © 2018 Saba. All rights reserved.
 //
 
-class LectureViewModel : ViewModelBase, INavigatingViewModel
+class LecturePageViewModel : ViewModelBase, INavigatingViewModel
 {
     func getLectureList ()
     {

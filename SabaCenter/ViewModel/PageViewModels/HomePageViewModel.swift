@@ -1,5 +1,5 @@
 //
-//  HomeViewModel.swift
+//  HomePageViewModel.swift
 //  SabaCenter
 //
 //  Created by Mohsen Hosseini on 3/11/18.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-class HomeViewModel : ViewModelBase, INaviagtingViewModel
+class HomePageViewModel : ViewModelBase, INaviagtingViewModel
 {
     func getDate () -> String
     {

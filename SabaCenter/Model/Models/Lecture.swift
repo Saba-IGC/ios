@@ -1,0 +1,18 @@
+//
+//  Lecture.swift
+//  SabaCenter
+//
+//  Created by Mohsen Hosseini on 3/18/18.
+//  Copyright © 2018 Saba. All rights reserved.
+//
+
+import Foundation
+
+class Lecture
+{
+    var lecturerName: String
+    var title: String
+    var date: Date
+    var videoURL: String;
+    //var audioFile
+}
