@@ -10,8 +10,8 @@ import Foundation
 
 class Question
 {
-    var title: String;
-    var description: String;
-    var answer: String;
-    //var keyWords = [KeyWord()]
+    var title: String
+    var description: String
+    var answer: String
+    var keyWords = [String()]
 }
