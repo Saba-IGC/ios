@@ -21,9 +21,13 @@
 		13655522205656D100C4457A /* QuestionDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13655521205656D100C4457A /* QuestionDetailViewModel.swift */; };
 		13655524205658D100C4457A /* ForumPageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13655523205658D100C4457A /* ForumPageViewModel.swift */; };
 		13971A83205EFB7C001F51AE /* ScheduleItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13971A82205EFB7C001F51AE /* ScheduleItem.swift */; };
-		13971A85205F0062001F51AE /* Hadith.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13971A84205F0062001F51AE /* Hadith.swift */; };
-		13971A89205F1200001F51AE /* Lecture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13971A88205F1200001F51AE /* Lecture.swift */; };
-		13971A8B205F1342001F51AE /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13971A8A205F1342001F51AE /* Question.swift */; };
+		13971A85205F0062001F51AE /* HadithItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13971A84205F0062001F51AE /* HadithItem.swift */; };
+		13971A89205F1200001F51AE /* LectureItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13971A88205F1200001F51AE /* LectureItem.swift */; };
+		13971A8B205F1342001F51AE /* QuestionItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13971A8A205F1342001F51AE /* QuestionItem.swift */; };
+		13E38E792079971B0018B5AE /* IHadithRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E38E782079971B0018B5AE /* IHadithRepository.swift */; };
+		13E38E7B207998240018B5AE /* HadithRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E38E7A207998240018B5AE /* HadithRepository.swift */; };
+		13E38E7D20799B6D0018B5AE /* IHadithService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E38E7C20799B6D0018B5AE /* IHadithService.swift */; };
+		13E38E7F20799CE40018B5AE /* HadithService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E38E7E20799CE40018B5AE /* HadithService.swift */; };
 		629C9021204B74E4006E1438 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629C9020204B74E4006E1438 /* AppDelegate.swift */; };
 		629C9023204B74E4006E1438 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629C9022204B74E4006E1438 /* MasterViewController.swift */; };
 		629C9025204B74E4006E1438 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629C9024204B74E4006E1438 /* DetailViewController.swift */; };
@@ -114,9 +118,13 @@
 		13655521205656D100C4457A /* QuestionDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionDetailViewModel.swift; sourceTree = "<group>"; };
 		13655523205658D100C4457A /* ForumPageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumPageViewModel.swift; sourceTree = "<group>"; };
 		13971A82205EFB7C001F51AE /* ScheduleItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleItem.swift; sourceTree = "<group>"; };
-		13971A84205F0062001F51AE /* Hadith.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hadith.swift; sourceTree = "<group>"; };
-		13971A88205F1200001F51AE /* Lecture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lecture.swift; sourceTree = "<group>"; };
-		13971A8A205F1342001F51AE /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		13971A84205F0062001F51AE /* HadithItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HadithItem.swift; sourceTree = "<group>"; };
+		13971A88205F1200001F51AE /* LectureItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LectureItem.swift; sourceTree = "<group>"; };
+		13971A8A205F1342001F51AE /* QuestionItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionItem.swift; sourceTree = "<group>"; };
+		13E38E782079971B0018B5AE /* IHadithRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IHadithRepository.swift; sourceTree = "<group>"; };
+		13E38E7A207998240018B5AE /* HadithRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HadithRepository.swift; sourceTree = "<group>"; };
+		13E38E7C20799B6D0018B5AE /* IHadithService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IHadithService.swift; sourceTree = "<group>"; };
+		13E38E7E20799CE40018B5AE /* HadithService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HadithService.swift; sourceTree = "<group>"; };
 		3BBA944A5C0E23D30B133977 /* Pods-SabaCenter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SabaCenter.release.xcconfig"; path = "Pods/Target Support Files/Pods-SabaCenter/Pods-SabaCenter.release.xcconfig"; sourceTree = "<group>"; };
 		629C901D204B74E4006E1438 /* SabaCenter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SabaCenter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		629C9020204B74E4006E1438 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -346,9 +354,9 @@
 			children = (
 				629C9076204B7C95006E1438 /* Item.swift */,
 				13971A82205EFB7C001F51AE /* ScheduleItem.swift */,
-				13971A84205F0062001F51AE /* Hadith.swift */,
-				13971A88205F1200001F51AE /* Lecture.swift */,
-				13971A8A205F1342001F51AE /* Question.swift */,
+				13971A84205F0062001F51AE /* HadithItem.swift */,
+				13971A88205F1200001F51AE /* LectureItem.swift */,
+				13971A8A205F1342001F51AE /* QuestionItem.swift */,
 				62E882712067287600BDBE47 /* CalendarEventItem.swift */,
 			);
 			path = Models;
@@ -365,6 +373,8 @@
 				62E8826D206724A500BDBE47 /* ILectureRepository.swift */,
 				62E8826F206724B600BDBE47 /* IQuestionRepository.swift */,
 				62E8827320672FF600BDBE47 /* CalendarEventRepository.swift */,
+				13E38E782079971B0018B5AE /* IHadithRepository.swift */,
+				13E38E7A207998240018B5AE /* HadithRepository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -376,6 +386,8 @@
 				629C906F204B7BAB006E1438 /* PlaceholderService.swift */,
 				62E88275206732E700BDBE47 /* ICalendarEventService.swift */,
 				62E882772067332000BDBE47 /* CalendarEventService.swift */,
+				13E38E7C20799B6D0018B5AE /* IHadithService.swift */,
+				13E38E7E20799CE40018B5AE /* HadithService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -627,18 +639,20 @@
 				629C9077204B7C95006E1438 /* Item.swift in Sources */,
 				130DEBE12054BC9B003F7811 /* LectureViewController.swift in Sources */,
 				62E8826A2067246B00BDBE47 /* IDailyPrayerRepository.swift in Sources */,
+				13E38E7B207998240018B5AE /* HadithRepository.swift in Sources */,
 				62E882682067245500BDBE47 /* ICalendarEventRepository.swift in Sources */,
 				629C9095204E83E6006E1438 /* NavigateTestViewController.swift in Sources */,
-				13971A8B205F1342001F51AE /* Question.swift in Sources */,
+				13971A8B205F1342001F51AE /* QuestionItem.swift in Sources */,
+				13E38E7D20799B6D0018B5AE /* IHadithService.swift in Sources */,
 				1365551C205648C700C4457A /* LecturePageViewModel.swift in Sources */,
-				13971A89205F1200001F51AE /* Lecture.swift in Sources */,
+				13971A89205F1200001F51AE /* LectureItem.swift in Sources */,
 				62E8826C2067247F00BDBE47 /* ITriviaRepository.swift in Sources */,
 				62E88276206732E700BDBE47 /* ICalendarEventService.swift in Sources */,
 				62E88270206724B600BDBE47 /* IQuestionRepository.swift in Sources */,
 				1365551A2056349200C4457A /* HomePageViewModel.swift in Sources */,
 				130DEBE32054BD18003F7811 /* ScheduleViewController.swift in Sources */,
 				130DEBE52054BD7A003F7811 /* ForumViewController.swift in Sources */,
-				13971A85205F0062001F51AE /* Hadith.swift in Sources */,
+				13971A85205F0062001F51AE /* HadithItem.swift in Sources */,
 				629C9070204B7BAB006E1438 /* PlaceholderService.swift in Sources */,
 				629C9093204E7F67006E1438 /* NavigateTestPageViewModel.swift in Sources */,
 				13655520205654B700C4457A /* AskPageViewModel.swift in Sources */,
@@ -651,7 +665,9 @@
 				13655522205656D100C4457A /* QuestionDetailViewModel.swift in Sources */,
 				62E8827420672FF600BDBE47 /* CalendarEventRepository.swift in Sources */,
 				629C908D204E5AD2006E1438 /* DetailPageViewModel.swift in Sources */,
+				13E38E7F20799CE40018B5AE /* HadithService.swift in Sources */,
 				629C906A204B7B25006E1438 /* ItemViewModel.swift in Sources */,
+				13E38E792079971B0018B5AE /* IHadithRepository.swift in Sources */,
 				62E882782067332000BDBE47 /* CalendarEventService.swift in Sources */,
 				130DEBE72054BDB1003F7811 /* AskViewController.swift in Sources */,
 				62E882722067287600BDBE47 /* CalendarEventItem.swift in Sources */,
