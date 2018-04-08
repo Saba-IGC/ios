@@ -22,7 +22,7 @@ public class HadithRepository: IHadithRepository {
         return self.hadithService.getHadiths()
     }
 
-    public func getHadithOfTheDay() -> HadithItem {
+    public func getHadithOfTheDay() -> Observable<HadithItem> {
         return self.hadithService.getHadithOfTheDay()
     }
 }
