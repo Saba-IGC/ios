@@ -633,7 +633,7 @@
                                             <constraint firstAttribute="height" constant="400" id="v1F-vV-ugp"/>
                                         </constraints>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="LHu-kv-du9">
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="LHu-kv-du9" customClass="LectureCell" customModule="SabaCenter" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="28" width="355" height="44"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="LHu-kv-du9" id="lJo-Ml-rZ9">
@@ -676,6 +676,11 @@
                                                         <constraint firstItem="lgM-6E-Edv" firstAttribute="centerY" secondItem="lJo-Ml-rZ9" secondAttribute="centerY" id="xPb-1W-CLx"/>
                                                     </constraints>
                                                 </tableViewCellContentView>
+                                                <connections>
+                                                    <outlet property="dateLabel" destination="BeX-Ny-DmZ" id="22J-lk-jS4"/>
+                                                    <outlet property="lecturerLabel" destination="XGy-vO-lcp" id="l6F-Wf-yCk"/>
+                                                    <outlet property="titleLabel" destination="BXB-js-U9c" id="EN0-R2-8bc"/>
+                                                </connections>
                                             </tableViewCell>
                                         </prototypes>
                                     </tableView>
