@@ -17,7 +17,7 @@ public class HadithService: IHadithService {
             HadithItem(description: "Be like the flower that gives its fragrance to even the hand that crushes it", source: "Reputable source", quotee: "Imam Ali (s)")])
     }
 
-    public func getHadithOfTheDay() -> HadithItem {
-        return HadithItem(description: "Be like the flower that gives its fragrance to even the hand that crushes it", source: "Reputable source", quotee: "Imam Ali (s)")
+    public func getHadithOfTheDay() -> Observable<HadithItem> {
+        return Observable.of(HadithItem(description: "Be like the flower that gives its fragrance to even the hand that crushes it", source: "Reputable source", quotee: "Imam Ali (s)"))
     }
 }

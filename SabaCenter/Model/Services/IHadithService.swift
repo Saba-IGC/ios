@@ -11,5 +11,5 @@ import RxSwift
 
 public protocol IHadithService {
     func getHadiths() -> Observable<[HadithItem]>
-    func getHadithOfTheDay() -> HadithItem
+    func getHadithOfTheDay() -> Observable<HadithItem>
 }
