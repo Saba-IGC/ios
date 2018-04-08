@@ -10,7 +10,15 @@ import Foundation
 
 class ScheduleItem {
     enum Importance { case normal; case high}
-    var date: Date = Date()
-    var description: String = ""
-    var importance: Importance = .normal
+    var date: Date
+    var description: String
+    var title: String
+    var importance: Importance
+
+    init (title: String, date: Date, description: String, importance: Importance) {
+        self.title = title
+        self.date = date
+        self.description = description
+        self.importance = importance
+    }
 }

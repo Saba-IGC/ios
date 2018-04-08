@@ -12,7 +12,7 @@ import Framework
 class LecturePageViewModel: ViewModelBase {
     func getLectureList () {
         /*
-         Lecture items should probably have:
+         LectureItem items should probably have:
          - Date
          - Speaker
          - Title
