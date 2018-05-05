@@ -8,16 +8,18 @@
 
 import Foundation
 
-class LectureItem {
-    var lecturerName: String
+public class LectureItem {
+    var speakerName: String
     var title: String
+    var description: String
     var date: Date
     var videoUrl: String
     var audioUrl: String
 
-    init (lecturerName: String, title: String, date: Date, videoUrl: String, audioUrl: String) {
-        self.lecturerName = lecturerName
+    init (speakerName: String, title: String, description: String, date: Date, videoUrl: String, audioUrl: String) {
+        self.speakerName = speakerName
         self.title = title
+        self.description = description
         self.date = date
         self.videoUrl = videoUrl
         self.audioUrl = audioUrl

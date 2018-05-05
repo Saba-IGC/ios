@@ -11,7 +11,8 @@ import UIKit
 class LectureCell: UITableViewCell {
 
     @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var lecturerLabel: UILabel!
+    @IBOutlet weak var descriptionLabel: UILabel!
+    @IBOutlet weak var speakerNameLabel: UILabel!
     @IBOutlet weak var dateLabel: UILabel!
 
     override func awakeFromNib() {
@@ -27,8 +28,9 @@ class LectureCell: UITableViewCell {
 
     func updateCell (lecture: LectureViewModel) {
         titleLabel.text = lecture.title
+        descriptionLabel.text = lecture.description
         dateLabel.text = lecture.date
-        lecturerLabel.text = lecture.lecturerName
+        speakerNameLabel.text = lecture.speakerName
     }
 
 }

@@ -20,9 +20,12 @@ class AppDelegate: SuperDelegate, ApplicationLaunched {
         container.register(IPlaceholderService.self) { _ in PlaceholderService()}.inObjectScope(.container)
         container.register(IPlaceholderRepository.self) { resolver in PlaceholderRepository(placeholderService: resolver.resolve(IPlaceholderService.self)!)}.inObjectScope(.container)
         container.register(INavigationService.self) { _ in NavigationService()}.inObjectScope(.container)
+        container.register(ILectureService.self) { _ in LectureService()}.inObjectScope(.container)
+        container.register(ILectureRepository.self) { resolver in LectureRepository(lectureService: resolver.resolve(ILectureService.self)!)}.inObjectScope(.container)
         container.register(MainPageViewModel.self) { resolver in MainPageViewModel(placeholderRepo: resolver.resolve(IPlaceholderRepository.self)!, navigationService: resolver.resolve(INavigationService.self)!) }
         container.register(DetailPageViewModel.self) { resolver in DetailPageViewModel(navigationService: resolver.resolve(INavigationService.self)!) }
         container.register(NavigateTestPageViewModel.self) { _ in NavigateTestPageViewModel() }
+        container.register(LecturePageViewModel.self) { _ in LecturePageViewModel()}
         return container
     }()
 
