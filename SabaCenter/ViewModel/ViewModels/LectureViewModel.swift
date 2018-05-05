@@ -15,14 +15,18 @@ public class LectureViewModel {
         return lecture.title
     }
 
+    var description: String {
+        return lecture.description
+    }
+
     var date: String {
         let dateFormatter = DateFormatter()
         dateFormatter.locale = Locale(identifier: "en_US")
         return dateFormatter.string(from: lecture.date)
     }
 
-    var lecturerName: String {
-        return lecture.lecturerName
+    var speakerName: String {
+        return lecture.speakerName
     }
 
     init (lecture: LectureItem) {

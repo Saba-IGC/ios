@@ -10,13 +10,19 @@ import Foundation
 import Framework
 
 class LecturePageViewModel: ViewModelBase {
-    func getLectureList () {
+
+    init() {
+    }
+
+    func getLectureList () -> [LectureViewModel] {
         /*
          LectureItem items should probably have:
          - Date
          - Speaker
          - Title
          */
+
+        return [LectureViewModel]()
     }
 
     func getLinkToLiveStream () -> String {

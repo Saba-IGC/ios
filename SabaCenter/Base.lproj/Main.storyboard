@@ -209,7 +209,6 @@
         <!--Placeholder View Controller-->
         <scene sceneID="iao-4T-bVp">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="VBU-De-zIL" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="p5K-HZ-gXw" userLabel="Placeholder View Controller" customClass="NavigateTestViewController" customModule="SabaCenter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bvt-9t-kX9">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -241,6 +240,7 @@
                         <outlet property="parameterLabel" destination="IO6-mj-uAF" id="h5A-ab-VWx"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VBU-De-zIL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="708" y="887"/>
         </scene>
@@ -634,7 +634,7 @@
                                 <rect key="frame" x="0.0" y="44" width="375" height="496"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="180" id="LHu-kv-du9" customClass="LectureCell" customModule="SabaCenter" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="lectureCell" rowHeight="180" id="LHu-kv-du9" customClass="LectureCell" customModule="SabaCenter" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="180"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="LHu-kv-du9" id="lJo-Ml-rZ9">
@@ -681,7 +681,8 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="dateLabel" destination="BeX-Ny-DmZ" id="22J-lk-jS4"/>
-                                            <outlet property="lecturerLabel" destination="XGy-vO-lcp" id="l6F-Wf-yCk"/>
+                                            <outlet property="descriptionLabel" destination="luO-9I-53n" id="r0r-LC-BUn"/>
+                                            <outlet property="speakerNameLabel" destination="XGy-vO-lcp" id="yQ7-Qt-7Pq"/>
                                             <outlet property="titleLabel" destination="BXB-js-U9c" id="EN0-R2-8bc"/>
                                         </connections>
                                     </tableViewCell>
