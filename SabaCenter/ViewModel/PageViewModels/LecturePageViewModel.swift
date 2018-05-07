@@ -8,35 +8,35 @@
 
 import Foundation
 import Framework
+import RxSwift
 
 class LecturePageViewModel: ViewModelBase {
+    let lectureRepo: ILectureRepository
 
-    init() {
+    init(lectureRepo: ILectureRepository) {
+        self.lectureRepo = lectureRepo
     }
 
-    func getLectureList () -> [LectureViewModel] {
-        /*
-         LectureItem items should probably have:
-         - Date
-         - Speaker
-         - Title
-         */
-
-        return [LectureViewModel]()
+    func getLectureList() -> Observable<[LectureViewModel]> {
+        return self.lectureRepo.getLectures().map { lectures in
+            return lectures.map { item in
+                return LectureViewModel(lecture: item)
+            }
+        }
     }
 
-    func getLinkToLiveStream () -> String {
+    func getLinkToLiveStream() -> String {
         return "Link to youtube live stream"
     }
 
-    func sortLecturesBy (sortParameter: String) {
+    func sortLecturesBy(sortParameter: String) {
         switch sortParameter {
         default:
             return
         }
     }
 
-    func searchLectures (searchInput: String) -> Int {
+    func searchLectures(searchInput: String) -> Int {
         /*
          Take a look at:
          - Titles

@@ -8,19 +8,28 @@
 
 import Foundation
 
-public class LectureItem {
-    var speakerName: String
-    var title: String
-    var description: String
-    var date: Date
-    var videoUrl: String
-    var audioUrl: String
+public enum MediaType {
+    case audio
+    case video
+}
 
-    init (speakerName: String, title: String, description: String, date: Date, videoUrl: String, audioUrl: String) {
+public class LectureItem {
+    let lectureId: Int
+    let speakerName: String
+    let title: String
+    let description: String
+    let date: Date
+    let videoUrl: String?
+    let audioUrl: String?
+    let mediaType: MediaType
+
+    init (lectureId: Int, speakerName: String, title: String, description: String, date: Date, mediaType: MediaType, videoUrl: String?, audioUrl: String?) {
+        self.lectureId = lectureId
         self.speakerName = speakerName
         self.title = title
         self.description = description
         self.date = date
+        self.mediaType = mediaType
         self.videoUrl = videoUrl
         self.audioUrl = audioUrl
     }
