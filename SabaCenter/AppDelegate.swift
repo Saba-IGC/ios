@@ -25,7 +25,7 @@ class AppDelegate: SuperDelegate, ApplicationLaunched {
         container.register(MainPageViewModel.self) { resolver in MainPageViewModel(placeholderRepo: resolver.resolve(IPlaceholderRepository.self)!, navigationService: resolver.resolve(INavigationService.self)!) }
         container.register(DetailPageViewModel.self) { resolver in DetailPageViewModel(navigationService: resolver.resolve(INavigationService.self)!) }
         container.register(NavigateTestPageViewModel.self) { _ in NavigateTestPageViewModel() }
-        container.register(LecturePageViewModel.self) { _ in LecturePageViewModel()}
+        container.register(LecturePageViewModel.self) { resolver in LecturePageViewModel(lectureRepo: resolver.resolve(ILectureRepository.self)!)}
         return container
     }()
 

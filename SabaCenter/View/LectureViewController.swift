@@ -9,30 +9,39 @@
 import Foundation
 import UIKit
 import Framework
+import RxSwift
+import RxCocoa
 
 class LectureViewController: UIViewControllerBase<LecturePageViewModel> {
     @IBOutlet weak var liveStreamButton: UIButton!
     @IBOutlet weak var lecturesTableView: UITableView!
+    static let normalBackgroundColor = UIColor.white
+    static let alternateBackgroundColor = UIColor(red: 0.65, green: 0.65, blue: 0.65, alpha: 1.0)
 
     @IBAction func liveStreamButtonTouchUpInside(_ sender: UIButton) {
 
     }
 
     override func viewDidLoad() {
-        setupLectureTable()
+        super.viewDidLoad()
+        _ = viewModel?.getLectureList()
+            .takeUntil(self.rx.deallocated)
+            .bind(to: self.lecturesTableView.rx.items(cellIdentifier: "lectureCell", cellType: LectureCell.self)) { row, element, cell in
+                cell.titleLabel.text = element.title
+                cell.descriptionLabel.text = element.description
+                cell.dateLabel.text = element.date
+                cell.speakerNameLabel.text = element.speakerName
 
-    }
+                if row % 2 == 0 {
+                    cell.backgroundColor = LectureViewController.normalBackgroundColor
+                } else {
+                    cell.backgroundColor = LectureViewController.alternateBackgroundColor
+                }
+            }
 
-    func setupLectureTable() {
-        let lectureTableDataSource = LectureTableDataSource(lectureItems: (self.viewModel?.getLectureList())!)
-
-        lecturesTableView.dataSource = lectureTableDataSource
-        lecturesTableView.reloadData()
-
-        //Prevents empty cells from appearing
+        // Prevents empty cells from appearing
         lecturesTableView.tableFooterView = nil
-
-        //Set up a header for the table
+        // Set up a header for the table
         setupTableHeaderView()
     }
 
