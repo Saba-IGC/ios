@@ -35,6 +35,7 @@
 		13E38E7F20799CE40018B5AE /* HadithService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E38E7E20799CE40018B5AE /* HadithService.swift */; };
 		13E38E812079B9080018B5AE /* LectureCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E38E802079B9080018B5AE /* LectureCell.swift */; };
 		13E38E832079BC300018B5AE /* LectureViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E38E822079BC300018B5AE /* LectureViewModel.swift */; };
+		6202561320A91339004628C6 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6202561220A91339004628C6 /* AVKit.framework */; };
 		629C9021204B74E4006E1438 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629C9020204B74E4006E1438 /* AppDelegate.swift */; };
 		629C9023204B74E4006E1438 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629C9022204B74E4006E1438 /* MasterViewController.swift */; };
 		629C9025204B74E4006E1438 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629C9024204B74E4006E1438 /* DetailViewController.swift */; };
@@ -140,6 +141,7 @@
 		13E38E802079B9080018B5AE /* LectureCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LectureCell.swift; sourceTree = "<group>"; };
 		13E38E822079BC300018B5AE /* LectureViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LectureViewModel.swift; sourceTree = "<group>"; };
 		3BBA944A5C0E23D30B133977 /* Pods-SabaCenter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SabaCenter.release.xcconfig"; path = "Pods/Target Support Files/Pods-SabaCenter/Pods-SabaCenter.release.xcconfig"; sourceTree = "<group>"; };
+		6202561220A91339004628C6 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
 		629C901D204B74E4006E1438 /* SabaCenter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SabaCenter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		629C9020204B74E4006E1438 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		629C9022204B74E4006E1438 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
@@ -194,6 +196,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6202561320A91339004628C6 /* AVKit.framework in Frameworks */,
 				0FFA25839A7D20FE834F27A1 /* Pods_SabaCenter.framework in Frameworks */,
 				629C9052204B79ED006E1438 /* Framework.framework in Frameworks */,
 			);
@@ -244,9 +247,17 @@
 		4A2027E3E732A2812B169B91 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6202561220A91339004628C6 /* AVKit.framework */,
 				9F3E0E19BC7B1C37853FB55A /* Pods_SabaCenter.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6202561420A914E9004628C6 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		629C9014204B74E4006E1438 = {
@@ -342,6 +353,7 @@
 		629C9063204B7AA1006E1438 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				6202561420A914E9004628C6 /* Services */,
 				13A941C7208D81170046BE8D /* DataSources */,
 				13E38E842079C16A0018B5AE /* CustomControls */,
 				629C9022204B74E4006E1438 /* MasterViewController.swift */,

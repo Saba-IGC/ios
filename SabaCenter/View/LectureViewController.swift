@@ -11,6 +11,7 @@ import UIKit
 import Framework
 import RxSwift
 import RxCocoa
+import AVKit
 
 class LectureViewController: UIViewControllerBase<LecturePageViewModel> {
     @IBOutlet weak var liveStreamButton: UIButton!
@@ -38,6 +39,21 @@ class LectureViewController: UIViewControllerBase<LecturePageViewModel> {
                     cell.backgroundColor = LectureViewController.alternateBackgroundColor
                 }
             }
+
+        _ = self.lecturesTableView.rx.modelSelected(LectureViewModel.self)
+            .takeUntil(self.rx.deallocated)
+            .subscribe(onNext: { lecture in
+                guard let mediaUrl = lecture.mediaUrl else {
+                    NSLog("Invalid media URL")
+                    return
+                }
+
+                let player = AVPlayer(url: mediaUrl)
+                let playerVC = AVPlayerViewController()
+                playerVC.player = player
+                self.present(playerVC, animated: true)
+                player.play()
+            })
 
         // Prevents empty cells from appearing
         lecturesTableView.tableFooterView = nil

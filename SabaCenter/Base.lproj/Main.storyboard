@@ -712,20 +712,11 @@
                     <connections>
                         <outlet property="lecturesTableView" destination="bDH-eb-M9Z" id="pkH-wY-th5"/>
                         <outlet property="liveStreamButton" destination="klx-SE-2Zu" id="TYj-Nb-iqj"/>
-                        <segue destination="6L6-UD-OgD" kind="show" id="m1h-G0-CiT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gIT-gG-jA1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-290" y="3166"/>
-        </scene>
-        <!--AV Player View Controller-->
-        <scene sceneID="WU1-oC-EAg">
-            <objects>
-                <avPlayerViewController videoGravity="AVLayerVideoGravityResizeAspect" id="6L6-UD-OgD" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="EtI-QS-9oY" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="774" y="2883"/>
         </scene>
         <!--Navigation Controller Base-->
         <scene sceneID="r7l-gg-dq7">
