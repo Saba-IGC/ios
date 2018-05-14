@@ -41,12 +41,20 @@ public class LectureViewModel {
         return lecture.mediaType
     }
 
-    var mediaUrl: String? {
+    var mediaUrl: URL? {
         switch self.mediaType {
         case .audio:
-            return self.lecture.audioUrl
+            guard let url = self.lecture.audioUrl else {
+                NSLog("Invalid audio url")
+                return nil
+            }
+            return URL(string: url)
         case .video:
-            return self.lecture.videoUrl
+            guard let url = self.lecture.videoUrl else {
+                NSLog("Invalid video url")
+                return nil
+            }
+            return URL(string: url)
         }
     }
 }
