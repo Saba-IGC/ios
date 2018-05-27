@@ -12,4 +12,5 @@ import RxSwift
 public protocol ILectureRepository {
     func getLectures() -> Observable<[LectureItem]>
     func getLiveStream() -> Observable<LectureItem>
+    func searchLectures()
 }

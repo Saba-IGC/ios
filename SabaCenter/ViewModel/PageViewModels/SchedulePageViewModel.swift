@@ -8,21 +8,27 @@
 
 import Foundation
 import Framework
+import RxSwift
 
 class SchedulePageViewModel: ViewModelBase {
-    func getListOfEventDays () {
-        /* Each event day can have a list of events
-           Each event has a description, time and duration
-           The table would have a cell for each day,
-           with each cell broken down into smaller sub sections for each event */
+
+    let scheduleRepo: IScheduleRepository
+
+    init(scheduleRepo: IScheduleRepository) {
+        self.scheduleRepo = scheduleRepo
     }
 
-    func searchEvents () {
-        /*
-         Take a look at:
-          - Event names
-          - Event items (stuff happening within event)
-          - Event descriptions
-         */
+    func getListOfScheduleItems() -> Observable<[ScheduleViewModel]> {
+
+        return self.scheduleRepo.getScheduleItems().map { schedules in
+            return schedules.map { item in
+                return ScheduleViewModel(schedule: item)
+            }
+        }
+    }
+
+    func searchSchedule() {
+
+        //scheduleRepo.searchSchedules()
     }
 }

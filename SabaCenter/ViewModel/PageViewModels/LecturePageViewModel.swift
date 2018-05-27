@@ -37,12 +37,8 @@ class LecturePageViewModel: ViewModelBase {
     }
 
     func searchLectures(searchInput: String) -> Int {
-        /*
-         Take a look at:
-         - Titles
-         - Speakers
-         */
 
+        //lectureRepo.searchLectures()
         return 0
     }
 }

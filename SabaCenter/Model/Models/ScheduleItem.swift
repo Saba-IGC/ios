@@ -8,7 +8,7 @@
 
 import Foundation
 
-class ScheduleItem {
+public class ScheduleItem {
     enum Importance { case normal; case high}
     var date: Date
     var description: String

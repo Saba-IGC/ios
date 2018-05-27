@@ -24,4 +24,8 @@ public class LectureRepository: ILectureRepository {
     public func getLiveStream() -> Observable<LectureItem> {
         return lectureService.getLiveStream()
     }
+
+    public func searchLectures() {
+        return
+    }
 }
