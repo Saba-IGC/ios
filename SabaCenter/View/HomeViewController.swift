@@ -8,11 +8,22 @@
 
 import Foundation
 import UIKit
+import RxCocoa
+import RxSwift
+import Framework
 
-class HomeViewController: UIViewController {
+class HomeViewController: UIViewControllerBase<HomePageViewModel> {
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var countDownLabel: UILabel!
     @IBOutlet weak var eventLabel: UILabel!
     @IBOutlet weak var duaLabel: UILabel!
     @IBOutlet weak var triviaLabel: UILabel!
+
+    override func viewDidLoad() {
+       self.dateLabel.text = viewModel?.getDate()
+        self.duaLabel.text = viewModel?.getZekrOfTheDay()
+        self.countDownLabel.text = viewModel?.getTimeTillNextAzan()
+        self.triviaLabel.text = viewModel?.getHadithOfTheDay()
+        self.eventLabel.text = viewModel?.getUpcomingEvent()
+    }
 }

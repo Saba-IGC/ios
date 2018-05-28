@@ -27,7 +27,11 @@ class HomePageViewModel: ViewModelBase {
         return "ياذاالجلال و الاكرام"
     }
 
-    func getFactOfTheDay () -> String {
+    /*func getFactOfTheDay () -> String {
         return "Did you know: Insert fact here?!?"
+    }*/
+
+    func getUpcomingEvent () -> String {
+        return "Dua Kumeyl"
     }
 }

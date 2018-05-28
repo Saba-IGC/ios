@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0FFA25839A7D20FE834F27A1 /* Pods_SabaCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F3E0E19BC7B1C37853FB55A /* Pods_SabaCenter.framework */; };
+		1301443B20BB7C4F004979E8 /* ScheduleItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1301443A20BB7C4F004979E8 /* ScheduleItemCell.swift */; };
 		130DEBDF2054BAD8003F7811 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130DEBDE2054BAD8003F7811 /* HomeViewController.swift */; };
 		130DEBE12054BC9B003F7811 /* LectureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130DEBE02054BC9B003F7811 /* LectureViewController.swift */; };
 		130DEBE32054BD18003F7811 /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130DEBE22054BD18003F7811 /* ScheduleViewController.swift */; };
@@ -117,6 +118,7 @@
 
 /* Begin PBXFileReference section */
 		12EDB1F6BB7667F8B142C60C /* Pods-SabaCenter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SabaCenter.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SabaCenter/Pods-SabaCenter.debug.xcconfig"; sourceTree = "<group>"; };
+		1301443A20BB7C4F004979E8 /* ScheduleItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleItemCell.swift; sourceTree = "<group>"; };
 		130DEBDE2054BAD8003F7811 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		130DEBE02054BC9B003F7811 /* LectureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LectureViewController.swift; sourceTree = "<group>"; };
 		130DEBE22054BD18003F7811 /* ScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
@@ -247,6 +249,7 @@
 			isa = PBXGroup;
 			children = (
 				13E38E802079B9080018B5AE /* LectureCell.swift */,
+				1301443A20BB7C4F004979E8 /* ScheduleItemCell.swift */,
 			);
 			path = CustomControls;
 			sourceTree = "<group>";
@@ -706,6 +709,7 @@
 				13971A8B205F1342001F51AE /* QuestionItem.swift in Sources */,
 				13E38E7D20799B6D0018B5AE /* IHadithService.swift in Sources */,
 				1365551C205648C700C4457A /* LecturePageViewModel.swift in Sources */,
+				1301443B20BB7C4F004979E8 /* ScheduleItemCell.swift in Sources */,
 				13971A89205F1200001F51AE /* LectureItem.swift in Sources */,
 				62E8826C2067247F00BDBE47 /* ITriviaRepository.swift in Sources */,
 				62E88276206732E700BDBE47 /* ICalendarEventService.swift in Sources */,
