@@ -29,7 +29,6 @@ class AppDelegate: SuperDelegate, ApplicationLaunched {
         container.register(SchedulePageViewModel.self) {resolver in SchedulePageViewModel(scheduleRepo: resolver.resolve(IScheduleRepository.self)!)}
         container.register(IScheduleService.self) { _ in ScheduleService()}.inObjectScope(.container)
         container.register(IScheduleRepository.self) { resolver in ScheduleRepository(scheduleService: resolver.resolve(IScheduleService.self)!)}.inObjectScope(.container)
-
         return container
     }()
 
