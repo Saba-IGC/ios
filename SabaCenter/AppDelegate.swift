@@ -29,6 +29,11 @@ class AppDelegate: SuperDelegate, ApplicationLaunched {
         container.register(SchedulePageViewModel.self) {resolver in SchedulePageViewModel(scheduleRepo: resolver.resolve(IScheduleRepository.self)!)}
         container.register(IScheduleService.self) { _ in ScheduleService()}.inObjectScope(.container)
         container.register(IScheduleRepository.self) { resolver in ScheduleRepository(scheduleService: resolver.resolve(IScheduleService.self)!)}.inObjectScope(.container)
+        container.register(IHomeRepository.self) { resolver in HomeRepository(scheduleService: resolver.resolve(IScheduleService.self)!, hadithService: resolver.resolve(IHadithService.self)!)}.inObjectScope(.container)
+        container.register(HomePageViewModel.self) {resolver in HomePageViewModel(homeRepo: resolver.resolve(IHomeRepository.self)!)}
+        container.register(IHadithService.self) { _ in HadithService()}.inObjectScope(.container)
+        container.register(IHadithRepository.self) { resolver in HadithRepository(hadithService: resolver.resolve(IHadithService.self)!)}.inObjectScope(.container)
+
         return container
     }()
 

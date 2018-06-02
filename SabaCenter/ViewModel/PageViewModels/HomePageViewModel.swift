@@ -11,6 +11,12 @@ import Framework
 
 class HomePageViewModel: ViewModelBase {
 
+    let homeRepo: IHomeRepository
+
+    init(homeRepo: IHomeRepository) {
+        self.homeRepo = homeRepo
+    }
+
     func getDate () -> String {
         return "Sunday, March 11, 2018, 22 Jamadilakhir, 1439H"
     }
