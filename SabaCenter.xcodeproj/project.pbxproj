@@ -33,6 +33,8 @@
 		13A24A35208D4D660076AC8F /* ILectureService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A24A34208D4D660076AC8F /* ILectureService.swift */; };
 		13A24A37208D4F9B0076AC8F /* LectureService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A24A36208D4F9B0076AC8F /* LectureService.swift */; };
 		13A24A39208D57440076AC8F /* LectureRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A24A38208D57440076AC8F /* LectureRepository.swift */; };
+		13DC45AC20BBC60100891D05 /* IHomeRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13DC45AB20BBC60100891D05 /* IHomeRepository.swift */; };
+		13DC45AE20BBCB1E00891D05 /* HomeRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13DC45AD20BBCB1E00891D05 /* HomeRepository.swift */; };
 		13DE1F2D2079C7880092A77F /* HadithViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13DE1F2C2079C7880092A77F /* HadithViewModel.swift */; };
 		13E38E792079971B0018B5AE /* IHadithRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E38E782079971B0018B5AE /* IHadithRepository.swift */; };
 		13E38E7B207998240018B5AE /* HadithRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E38E7A207998240018B5AE /* HadithRepository.swift */; };
@@ -143,6 +145,8 @@
 		13A24A34208D4D660076AC8F /* ILectureService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ILectureService.swift; sourceTree = "<group>"; };
 		13A24A36208D4F9B0076AC8F /* LectureService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LectureService.swift; sourceTree = "<group>"; };
 		13A24A38208D57440076AC8F /* LectureRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LectureRepository.swift; sourceTree = "<group>"; };
+		13DC45AB20BBC60100891D05 /* IHomeRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IHomeRepository.swift; sourceTree = "<group>"; };
+		13DC45AD20BBCB1E00891D05 /* HomeRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRepository.swift; sourceTree = "<group>"; };
 		13DE1F2C2079C7880092A77F /* HadithViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HadithViewModel.swift; sourceTree = "<group>"; };
 		13E38E782079971B0018B5AE /* IHadithRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IHadithRepository.swift; sourceTree = "<group>"; };
 		13E38E7A207998240018B5AE /* HadithRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HadithRepository.swift; sourceTree = "<group>"; };
@@ -435,6 +439,8 @@
 				13A24A38208D57440076AC8F /* LectureRepository.swift */,
 				138EC75820BA23D800945785 /* IScheduleRepository.swift */,
 				138EC75A20BA240700945785 /* ScheduleRepository.swift */,
+				13DC45AB20BBC60100891D05 /* IHomeRepository.swift */,
+				13DC45AD20BBCB1E00891D05 /* HomeRepository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -708,6 +714,8 @@
 				629C9095204E83E6006E1438 /* NavigateTestViewController.swift in Sources */,
 				13971A8B205F1342001F51AE /* QuestionItem.swift in Sources */,
 				13E38E7D20799B6D0018B5AE /* IHadithService.swift in Sources */,
+				13DC45AE20BBCB1E00891D05 /* HomeRepository.swift in Sources */,
+				13DC45AC20BBC60100891D05 /* IHomeRepository.swift in Sources */,
 				1365551C205648C700C4457A /* LecturePageViewModel.swift in Sources */,
 				1301443B20BB7C4F004979E8 /* ScheduleItemCell.swift in Sources */,
 				13971A89205F1200001F51AE /* LectureItem.swift in Sources */,

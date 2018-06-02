@@ -629,7 +629,7 @@
                         <outlet property="countDownLabel" destination="9EG-X1-LNL" id="Cth-Re-YZG"/>
                         <outlet property="dateLabel" destination="AhO-d1-Ezj" id="tU8-vb-Xqy"/>
                         <outlet property="duaLabel" destination="XP4-Fv-I8k" id="WB4-dV-qCq"/>
-                        <outlet property="eventLabel" destination="3dl-Bt-pdO" id="8No-qI-EOz"/>
+                        <outlet property="eventLabel" destination="3dl-Bt-pdO" id="qmp-4E-DSP"/>
                         <outlet property="triviaLabel" destination="1TC-cq-8cb" id="DQB-Ey-2EG"/>
                     </connections>
                 </viewController>
