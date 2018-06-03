@@ -13,11 +13,13 @@ import RxSwift
 import RxCocoa
 import AVKit
 
-class LectureViewController: UIViewControllerBase<LecturePageViewModel> {
+class LectureViewController: UIViewControllerBase<LecturePageViewModel>, UITableViewDelegate {
     @IBOutlet weak var liveStreamButton: UIButton!
     @IBOutlet weak var lecturesTableView: UITableView!
     static let normalBackgroundColor = UIColor.white
-    static let alternateBackgroundColor = UIColor(red: 0.65, green: 0.65, blue: 0.65, alpha: 1.0)
+    static let alternateBackgroundColor = UIColor(red: 0.98, green: 0.98, blue: 0.98, alpha: 1.0)
+    private var lectureCellExpanded = false
+    private var previouslySelectedIndexPath: IndexPath!
 
     @IBAction func liveStreamButtonTouchUpInside(_ sender: UIButton) {
 
@@ -28,10 +30,7 @@ class LectureViewController: UIViewControllerBase<LecturePageViewModel> {
         _ = viewModel?.getLectureList()
             .takeUntil(self.rx.deallocated)
             .bind(to: self.lecturesTableView.rx.items(cellIdentifier: "lectureCell", cellType: LectureCell.self)) { row, element, cell in
-                cell.titleLabel.text = element.title
-                cell.descriptionLabel.text = element.description
-                cell.dateLabel.text = element.date
-                cell.speakerNameLabel.text = element.speakerName
+                cell.updateCell(lecture: element)
 
                 if row % 2 == 0 {
                     cell.backgroundColor = LectureViewController.normalBackgroundColor
@@ -48,15 +47,48 @@ class LectureViewController: UIViewControllerBase<LecturePageViewModel> {
                     return
                 }
 
-                let player = AVPlayer(url: mediaUrl)
+                /*let player = AVPlayer(url: mediaUrl)
                 let playerVC = AVPlayerViewController()
                 playerVC.player = player
                 self.present(playerVC, animated: true)
-                player.play()
+                player.play()*/
             })
 
         // Prevents empty cells from appearing
-        lecturesTableView.tableFooterView = nil
+        lecturesTableView.tableFooterView = UIView()
+        lecturesTableView.delegate = self
         // Set up a header for the table
+    }
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        //First click on the table, or all the cells are compressed
+        if previouslySelectedIndexPath == nil {
+            lectureCellExpanded = true
+            previouslySelectedIndexPath = indexPath
+        }
+        //User clicks on the cell that was already selected
+       else if lectureCellExpanded && indexPath == previouslySelectedIndexPath {
+            lectureCellExpanded = false
+            previouslySelectedIndexPath = nil
+        }
+       //User clicks on another cell
+       else if indexPath != previouslySelectedIndexPath  && lectureCellExpanded {
+            previouslySelectedIndexPath = indexPath
+        }
+
+        let cell = tableView.cellForRow(at: indexPath)
+        guard let lectureCell = cell as?LectureCell else {
+            NSLog("Invalid media URL")
+            return
+        }
+        //lectureCell.expandCell(expand: lectureCellExpanded)
+        tableView.beginUpdates()
+        tableView.endUpdates()
+    }
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        if indexPath.row == tableView.indexPathForSelectedRow?.row {
+            return lectureCellExpanded ? tableView.rowHeight + 150 : tableView.rowHeight }
+
+        return tableView.rowHeight
     }
 }

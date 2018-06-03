@@ -12,10 +12,12 @@ import RxSwift
 import RxCocoa
 import Framework
 
-class ScheduleViewController: UIViewControllerBase<SchedulePageViewModel> {
+class ScheduleViewController: UIViewControllerBase<SchedulePageViewModel>, UITableViewDelegate {
     @IBOutlet var scheduleTableView: UITableView!
     static let normalBackgroundColor = UIColor.white
-    static let alternateBackgroundColor = UIColor(red: 0.65, green: 0.65, blue: 0.65, alpha: 1.0)
+    static let alternateBackgroundColor = UIColor(red: 0.98, green: 0.98, blue: 0.98, alpha: 1.0)
+    private var scheduleCellExpanded = false
+    private var previouslySelectedIndexPath: IndexPath!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,6 +42,34 @@ class ScheduleViewController: UIViewControllerBase<SchedulePageViewModel> {
             })
 
         // Prevents empty cells from appearing
-        scheduleTableView.tableFooterView = nil
+        scheduleTableView.tableFooterView = UIView()
+        scheduleTableView.delegate = self
+    }
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        //First click on the table, or all the cells are compressed
+        if previouslySelectedIndexPath == nil {
+            scheduleCellExpanded = true
+            previouslySelectedIndexPath = indexPath
+        }
+            //User clicks on the cell that was already selected
+        else if scheduleCellExpanded && indexPath == previouslySelectedIndexPath {
+            scheduleCellExpanded = false
+            previouslySelectedIndexPath = nil
+        }
+            //User clicks on another cell
+        else if indexPath != previouslySelectedIndexPath  && scheduleCellExpanded {
+            previouslySelectedIndexPath = indexPath
+        }
+
+        tableView.beginUpdates()
+        tableView.endUpdates()
+    }
+
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        if indexPath.row == tableView.indexPathForSelectedRow?.row {
+            return scheduleCellExpanded ? tableView.rowHeight + 150 : tableView.rowHeight }
+
+        return tableView.rowHeight
     }
 }
