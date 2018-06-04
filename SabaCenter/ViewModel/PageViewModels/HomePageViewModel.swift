@@ -11,10 +11,12 @@ import Framework
 
 class HomePageViewModel: ViewModelBase {
 
-    let homeRepo: IHomeRepository
+    let hadithRepo: IHadithRepository
+    let scheduleRepo: IScheduleRepository
 
-    init(homeRepo: IHomeRepository) {
-        self.homeRepo = homeRepo
+    init(hadithRepo: IHadithRepository, scheduleRepo: IScheduleRepository) {
+        self.hadithRepo = hadithRepo
+        self.scheduleRepo = scheduleRepo
     }
 
     func getDate () -> String {
@@ -26,6 +28,7 @@ class HomePageViewModel: ViewModelBase {
     }
 
     func getHadithOfTheDay () -> String {
+        //return hadithRepo.getHadithOfTheDay()
         return "Be like the flower that gives its fragrance to even the hand that crushes it - Imam Ali (s)"
     }
 
@@ -38,6 +41,7 @@ class HomePageViewModel: ViewModelBase {
     }*/
 
     func getUpcomingEvent () -> String {
+        //return scheduleRepo.getUpcomingScheduleItem()
         return "Dua Kumeyl"
     }
 }

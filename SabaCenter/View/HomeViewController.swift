@@ -20,7 +20,7 @@ class HomeViewController: UIViewControllerBase<HomePageViewModel> {
     @IBOutlet weak var triviaLabel: UILabel!
 
     override func viewDidLoad() {
-       self.dateLabel.text = viewModel?.getDate()
+        self.dateLabel.text = viewModel?.getDate()
         self.duaLabel.text = viewModel?.getZekrOfTheDay()
         self.countDownLabel.text = viewModel?.getTimeTillNextAzan()
         self.triviaLabel.text = viewModel?.getHadithOfTheDay()

@@ -47,6 +47,7 @@ class LectureViewController: UIViewControllerBase<LecturePageViewModel>, UITable
                     return
                 }
 
+                //Bind it to the cell video button
                 /*let player = AVPlayer(url: mediaUrl)
                 let playerVC = AVPlayerViewController()
                 playerVC.player = player
@@ -76,19 +77,13 @@ class LectureViewController: UIViewControllerBase<LecturePageViewModel>, UITable
             previouslySelectedIndexPath = indexPath
         }
 
-        let cell = tableView.cellForRow(at: indexPath)
-        guard let lectureCell = cell as?LectureCell else {
-            NSLog("Invalid media URL")
-            return
-        }
-        //lectureCell.expandCell(expand: lectureCellExpanded)
         tableView.beginUpdates()
         tableView.endUpdates()
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if indexPath.row == tableView.indexPathForSelectedRow?.row {
-            return lectureCellExpanded ? tableView.rowHeight + 150 : tableView.rowHeight }
+            return lectureCellExpanded ? 200 : 75}
 
-        return tableView.rowHeight
+        return 75
     }
 }

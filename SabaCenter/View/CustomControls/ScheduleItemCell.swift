@@ -10,6 +10,9 @@ import UIKit
 
 class ScheduleItemCell: UITableViewCell {
 
+    @IBOutlet weak var reminderButton: UIButton!
+    @IBOutlet weak var descriptionLabel: UILabel!
+    @IBOutlet weak var titleLabel: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -21,4 +24,12 @@ class ScheduleItemCell: UITableViewCell {
         // Configure the view for the selected state
     }
 
+    func updateCell(schedule: ScheduleViewModel) {
+        titleLabel.text = schedule.title
+        descriptionLabel.text = schedule.description
+
+        if schedule.importance == ScheduleItem.Importance.high {
+            titleLabel.textColor = UIColor.red
+        }
+    }
 }

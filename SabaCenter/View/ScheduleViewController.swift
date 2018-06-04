@@ -24,8 +24,7 @@ class ScheduleViewController: UIViewControllerBase<SchedulePageViewModel>, UITab
         _ = viewModel?.getListOfScheduleItems()
             .takeUntil(self.rx.deallocated)
             .bind(to: self.scheduleTableView.rx.items(cellIdentifier: "scheduleItemCell", cellType: ScheduleItemCell.self)) { row, element, cell in
-                cell.textLabel?.text = element.title
-                cell.detailTextLabel?.text = element.description
+                cell.updateCell(schedule: element)
 
                 if row % 2 == 0 {
                     cell.backgroundColor = ScheduleViewController.normalBackgroundColor
@@ -33,13 +32,6 @@ class ScheduleViewController: UIViewControllerBase<SchedulePageViewModel>, UITab
                     cell.backgroundColor = ScheduleViewController.alternateBackgroundColor
                 }
         }
-
-        _ = self.scheduleTableView.rx.modelSelected(ScheduleViewModel.self)
-            .takeUntil(self.rx.deallocated)
-            .subscribe(onNext: { schedule in
-                _ = schedule.title
-                    return
-            })
 
         // Prevents empty cells from appearing
         scheduleTableView.tableFooterView = UIView()
@@ -68,8 +60,8 @@ class ScheduleViewController: UIViewControllerBase<SchedulePageViewModel>, UITab
 
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if indexPath.row == tableView.indexPathForSelectedRow?.row {
-            return scheduleCellExpanded ? tableView.rowHeight + 150 : tableView.rowHeight }
+            return scheduleCellExpanded ? 125 : 50 }
 
-        return tableView.rowHeight
+        return 50
     }
 }
