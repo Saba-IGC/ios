@@ -10,6 +10,9 @@ import UIKit
 
 class LectureCell: UITableViewCell {
 
+    @IBOutlet weak var videoButton: UIButton!
+    @IBOutlet weak var audioButton: UIButton!
+    @IBOutlet weak var buttonStack: UIStackView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var speakerNameLabel: UILabel!
@@ -31,5 +34,4 @@ class LectureCell: UITableViewCell {
         dateLabel.text = lecture.date
         speakerNameLabel.text = lecture.speakerName
     }
-
 }
