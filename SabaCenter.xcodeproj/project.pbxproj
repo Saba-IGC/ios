@@ -492,7 +492,6 @@
 				629C901A204B74E4006E1438 /* Frameworks */,
 				629C901B204B74E4006E1438 /* Resources */,
 				6DEEBD4635EE2F4511A63964 /* [CP] Embed Pods Frameworks */,
-				37478E7DCBBAD101CF2E6C62 /* [CP] Copy Pods Resources */,
 				629C9057204B79ED006E1438 /* Embed Frameworks */,
 				629C907A204BA861006E1438 /* ShellScript */,
 			);
@@ -617,21 +616,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		37478E7DCBBAD101CF2E6C62 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SabaCenter/Pods-SabaCenter-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		4E0CC3F86106A873FD5699C4 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -671,6 +655,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-SabaCenter/Pods-SabaCenter-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/FoldingCell/FoldingCell.framework",
 				"${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
@@ -681,6 +666,7 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FoldingCell.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PromiseKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",

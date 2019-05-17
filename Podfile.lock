@@ -1,5 +1,6 @@
 PODS:
   - Alamofire (4.6.0)
+  - FoldingCell (4.0.2)
   - PromiseKit (6.2.0):
     - PromiseKit/CorePromise (= 6.2.0)
     - PromiseKit/Foundation (= 6.2.0)
@@ -24,6 +25,7 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire (~> 4.6.0)
+  - FoldingCell (~> 4.0)
   - PromiseKit (~> 6.0)
   - PromiseKit/Alamofire (~> 6.0)
   - PromiseKit/CoreLocation (~> 6.0)
@@ -34,8 +36,21 @@ DEPENDENCIES:
   - SwiftyJSON (~> 4.0.0)
   - Swinject (~> 2.1.0)
 
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - FoldingCell
+    - PromiseKit
+    - RxCocoa
+    - RxSwift
+    - SuperDelegate
+    - SwiftLint
+    - SwiftyJSON
+    - Swinject
+
 SPEC CHECKSUMS:
   Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
+  FoldingCell: 352f0211a53f957b885a1b37d5ffa875da90bca5
   PromiseKit: ea9a155e1fd98a926ccfaf633c0fbd69851f0e7b
   RxCocoa: d88ba0f1f6abf040011a9eb4b539324fc426843a
   RxSwift: e49536837d9901277638493ea537394d4b55f570
@@ -44,6 +59,6 @@ SPEC CHECKSUMS:
   SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
   Swinject: afea49fd95f392b41171669f165842879c48fad6
 
-PODFILE CHECKSUM: c974bb30a3753dcec692d376599c5db6878cc5f2
+PODFILE CHECKSUM: d5bc716697b29d7b1f5f8fcd9b93e47437667bfc
 
-COCOAPODS: 1.4.0
+COCOAPODS: 1.5.3
