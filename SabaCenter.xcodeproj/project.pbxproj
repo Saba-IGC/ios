@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0FFA25839A7D20FE834F27A1 /* Pods_SabaCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F3E0E19BC7B1C37853FB55A /* Pods_SabaCenter.framework */; };
 		1301443B20BB7C4F004979E8 /* ScheduleItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1301443A20BB7C4F004979E8 /* ScheduleItemCell.swift */; };
 		130DEBDF2054BAD8003F7811 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130DEBDE2054BAD8003F7811 /* HomeViewController.swift */; };
 		130DEBE12054BC9B003F7811 /* LectureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130DEBE02054BC9B003F7811 /* LectureViewController.swift */; };
@@ -40,6 +39,7 @@
 		13E38E7F20799CE40018B5AE /* HadithService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E38E7E20799CE40018B5AE /* HadithService.swift */; };
 		13E38E812079B9080018B5AE /* LectureCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E38E802079B9080018B5AE /* LectureCell.swift */; };
 		13E38E832079BC300018B5AE /* LectureViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E38E822079BC300018B5AE /* LectureViewModel.swift */; };
+		5E649AC55FF61B2073806B06 /* Pods_SabaCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD71E34A2FBDC0E0B12C9BAD /* Pods_SabaCenter.framework */; };
 		6202561320A91339004628C6 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6202561220A91339004628C6 /* AVKit.framework */; };
 		629C9021204B74E4006E1438 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629C9020204B74E4006E1438 /* AppDelegate.swift */; };
 		629C9023204B74E4006E1438 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629C9022204B74E4006E1438 /* MasterViewController.swift */; };
@@ -117,7 +117,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		12EDB1F6BB7667F8B142C60C /* Pods-SabaCenter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SabaCenter.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SabaCenter/Pods-SabaCenter.debug.xcconfig"; sourceTree = "<group>"; };
 		1301443A20BB7C4F004979E8 /* ScheduleItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleItemCell.swift; sourceTree = "<group>"; };
 		130DEBDE2054BAD8003F7811 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		130DEBE02054BC9B003F7811 /* LectureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LectureViewController.swift; sourceTree = "<group>"; };
@@ -150,7 +149,7 @@
 		13E38E7E20799CE40018B5AE /* HadithService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HadithService.swift; sourceTree = "<group>"; };
 		13E38E802079B9080018B5AE /* LectureCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LectureCell.swift; sourceTree = "<group>"; };
 		13E38E822079BC300018B5AE /* LectureViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LectureViewModel.swift; sourceTree = "<group>"; };
-		3BBA944A5C0E23D30B133977 /* Pods-SabaCenter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SabaCenter.release.xcconfig"; path = "Pods/Target Support Files/Pods-SabaCenter/Pods-SabaCenter.release.xcconfig"; sourceTree = "<group>"; };
+		5D49B1BFAFD5512EF041C5E7 /* Pods-SabaCenter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SabaCenter.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SabaCenter/Pods-SabaCenter.debug.xcconfig"; sourceTree = "<group>"; };
 		6202561220A91339004628C6 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
 		629C901D204B74E4006E1438 /* SabaCenter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SabaCenter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		629C9020204B74E4006E1438 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -198,7 +197,8 @@
 		62E8827320672FF600BDBE47 /* CalendarEventRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarEventRepository.swift; sourceTree = "<group>"; };
 		62E88275206732E700BDBE47 /* ICalendarEventService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICalendarEventService.swift; sourceTree = "<group>"; };
 		62E882772067332000BDBE47 /* CalendarEventService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarEventService.swift; sourceTree = "<group>"; };
-		9F3E0E19BC7B1C37853FB55A /* Pods_SabaCenter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SabaCenter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B8C21E170DB2320FC637098 /* Pods-SabaCenter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SabaCenter.release.xcconfig"; path = "Pods/Target Support Files/Pods-SabaCenter/Pods-SabaCenter.release.xcconfig"; sourceTree = "<group>"; };
+		BD71E34A2FBDC0E0B12C9BAD /* Pods_SabaCenter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SabaCenter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -207,8 +207,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				6202561320A91339004628C6 /* AVKit.framework in Frameworks */,
-				0FFA25839A7D20FE834F27A1 /* Pods_SabaCenter.framework in Frameworks */,
 				629C9052204B79ED006E1438 /* Framework.framework in Frameworks */,
+				5E649AC55FF61B2073806B06 /* Pods_SabaCenter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,15 +229,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		016AEB2838793AC09038AD91 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				12EDB1F6BB7667F8B142C60C /* Pods-SabaCenter.debug.xcconfig */,
-				3BBA944A5C0E23D30B133977 /* Pods-SabaCenter.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		13A941C7208D81170046BE8D /* DataSources */ = {
 			isa = PBXGroup;
 			children = (
@@ -258,9 +249,18 @@
 			isa = PBXGroup;
 			children = (
 				6202561220A91339004628C6 /* AVKit.framework */,
-				9F3E0E19BC7B1C37853FB55A /* Pods_SabaCenter.framework */,
+				BD71E34A2FBDC0E0B12C9BAD /* Pods_SabaCenter.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5C4EB7658B2E4DEB81B28F87 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5D49B1BFAFD5512EF041C5E7 /* Pods-SabaCenter.debug.xcconfig */,
+				7B8C21E170DB2320FC637098 /* Pods-SabaCenter.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		6202561420A914E9004628C6 /* Services */ = {
@@ -278,8 +278,8 @@
 				629C9036204B74E4006E1438 /* SabaCenterTests */,
 				629C904C204B79ED006E1438 /* Framework */,
 				629C901E204B74E4006E1438 /* Products */,
-				016AEB2838793AC09038AD91 /* Pods */,
 				4A2027E3E732A2812B169B91 /* Frameworks */,
+				5C4EB7658B2E4DEB81B28F87 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -487,13 +487,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 629C903C204B74E4006E1438 /* Build configuration list for PBXNativeTarget "SabaCenter" */;
 			buildPhases = (
-				4E0CC3F86106A873FD5699C4 /* [CP] Check Pods Manifest.lock */,
+				78E5AB86BB2C17EEB5323DB1 /* [CP] Check Pods Manifest.lock */,
 				629C9019204B74E4006E1438 /* Sources */,
 				629C901A204B74E4006E1438 /* Frameworks */,
 				629C901B204B74E4006E1438 /* Resources */,
-				6DEEBD4635EE2F4511A63964 /* [CP] Embed Pods Frameworks */,
 				629C9057204B79ED006E1438 /* Embed Frameworks */,
 				629C907A204BA861006E1438 /* ShellScript */,
+				7493FE68DF14EED0215DE648 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -553,16 +553,18 @@
 				TargetAttributes = {
 					629C901C204B74E4006E1438 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
 					};
 					629C9032204B74E4006E1438 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 629C901C204B74E4006E1438;
 					};
 					629C904A204B79ED006E1438 = {
 						CreatedOnToolsVersion = 9.2;
-						LastSwiftMigration = 0920;
+						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -616,24 +618,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		4E0CC3F86106A873FD5699C4 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SabaCenter-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		629C907A204BA861006E1438 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -647,16 +631,19 @@
 			shellPath = /bin/sh;
 			shellScript = "if which \"${PODS_ROOT}/SwiftLint/swiftlint\" >/dev/null; then\n    \"${PODS_ROOT}/SwiftLint/swiftlint\" --strict\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
 		};
-		6DEEBD4635EE2F4511A63964 /* [CP] Embed Pods Frameworks */ = {
+		7493FE68DF14EED0215DE648 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			inputFileListPaths = (
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-SabaCenter/Pods-SabaCenter-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/FoldingCell/FoldingCell.framework",
 				"${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework",
+				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SuperDelegate/SuperDelegate.framework",
@@ -664,10 +651,13 @@
 				"${BUILT_PRODUCTS_DIR}/Swinject/Swinject.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FoldingCell.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PromiseKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SuperDelegate.framework",
@@ -677,6 +667,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SabaCenter/Pods-SabaCenter-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		78E5AB86BB2C17EEB5323DB1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SabaCenter-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -914,7 +926,7 @@
 		};
 		629C903D204B74E4006E1438 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 12EDB1F6BB7667F8B142C60C /* Pods-SabaCenter.debug.xcconfig */;
+			baseConfigurationReference = 5D49B1BFAFD5512EF041C5E7 /* Pods-SabaCenter.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -923,14 +935,14 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.saba.SabaCenter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		629C903E204B74E4006E1438 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3BBA944A5C0E23D30B133977 /* Pods-SabaCenter.release.xcconfig */;
+			baseConfigurationReference = 7B8C21E170DB2320FC637098 /* Pods-SabaCenter.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -939,7 +951,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.saba.SabaCenter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -954,7 +966,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.saba.SabaCenterTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SabaCenter.app/SabaCenter";
 			};
@@ -970,7 +982,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.saba.SabaCenterTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SabaCenter.app/SabaCenter";
 			};
@@ -994,7 +1006,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1018,7 +1030,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = org.saba.Framework;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";

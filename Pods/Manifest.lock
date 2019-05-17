@@ -1,46 +1,49 @@
 PODS:
-  - Alamofire (4.6.0)
+  - Alamofire (4.8.1)
   - FoldingCell (4.0.2)
-  - PromiseKit (6.2.0):
-    - PromiseKit/CorePromise (= 6.2.0)
-    - PromiseKit/Foundation (= 6.2.0)
-    - PromiseKit/UIKit (= 6.2.0)
-  - PromiseKit/Alamofire (6.2.0):
+  - PromiseKit (6.7.1):
+    - PromiseKit/CorePromise (= 6.7.1)
+    - PromiseKit/Foundation (= 6.7.1)
+    - PromiseKit/UIKit (= 6.7.1)
+  - PromiseKit/Alamofire (6.7.1):
     - Alamofire (~> 4.0)
     - PromiseKit/CorePromise
-  - PromiseKit/CoreLocation (6.2.0):
+  - PromiseKit/CoreLocation (6.7.1):
     - PromiseKit/CorePromise
-  - PromiseKit/CorePromise (6.2.0)
-  - PromiseKit/Foundation (6.2.0):
+  - PromiseKit/CorePromise (6.7.1)
+  - PromiseKit/Foundation (6.7.1):
     - PromiseKit/CorePromise
-  - PromiseKit/UIKit (6.2.0):
+  - PromiseKit/UIKit (6.7.1):
     - PromiseKit/CorePromise
-  - RxCocoa (4.1.2):
+  - RxAtomic (4.4.0)
+  - RxCocoa (4.4.0):
     - RxSwift (~> 4.0)
-  - RxSwift (4.1.2)
+  - RxSwift (4.4.0):
+    - RxAtomic (~> 4.4)
   - SuperDelegate (0.9.0)
-  - SwiftLint (0.25.0)
-  - SwiftyJSON (4.0.0)
-  - Swinject (2.1.1)
+  - SwiftLint (0.29.4)
+  - SwiftyJSON (4.2.0)
+  - Swinject (2.5.0)
 
 DEPENDENCIES:
-  - Alamofire (~> 4.6.0)
-  - FoldingCell (~> 4.0)
-  - PromiseKit (~> 6.0)
-  - PromiseKit/Alamofire (~> 6.0)
-  - PromiseKit/CoreLocation (~> 6.0)
-  - RxCocoa (~> 4.0)
-  - RxSwift (~> 4.0)
-  - SuperDelegate (~> 0.9.0)
-  - SwiftLint (~> 0.25.0)
-  - SwiftyJSON (~> 4.0.0)
-  - Swinject (~> 2.1.0)
+  - Alamofire
+  - FoldingCell
+  - PromiseKit
+  - PromiseKit/Alamofire
+  - PromiseKit/CoreLocation
+  - RxCocoa
+  - RxSwift
+  - SuperDelegate
+  - SwiftLint
+  - SwiftyJSON
+  - Swinject
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
     - FoldingCell
     - PromiseKit
+    - RxAtomic
     - RxCocoa
     - RxSwift
     - SuperDelegate
@@ -49,16 +52,17 @@ SPEC REPOS:
     - Swinject
 
 SPEC CHECKSUMS:
-  Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
+  Alamofire: 16ce2c353fb72865124ddae8a57c5942388f4f11
   FoldingCell: 352f0211a53f957b885a1b37d5ffa875da90bca5
-  PromiseKit: ea9a155e1fd98a926ccfaf633c0fbd69851f0e7b
-  RxCocoa: d88ba0f1f6abf040011a9eb4b539324fc426843a
-  RxSwift: e49536837d9901277638493ea537394d4b55f570
+  PromiseKit: ef376fb8b4e92edfeb66bd403b983eaa07fbde0c
+  RxAtomic: eacf60db868c96bfd63320e28619fe29c179656f
+  RxCocoa: df63ebf7b9a70d6b4eeea407ed5dd4efc8979749
+  RxSwift: 5976ecd04fc2fefd648827c23de5e11157faa973
   SuperDelegate: b70c7afddf8525217d0e074b850b8ea3cc6f8abd
-  SwiftLint: e14651157288e9e01d6e1a71db7014fb5744a8ea
-  SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
-  Swinject: afea49fd95f392b41171669f165842879c48fad6
+  SwiftLint: 73f2ecfd0f6d812c8cb9a73c00fe809bc2504585
+  SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
+  Swinject: 82cdb851f63f91bba974e3eca1d69780f2f7677e
 
-PODFILE CHECKSUM: d5bc716697b29d7b1f5f8fcd9b93e47437667bfc
+PODFILE CHECKSUM: d2d950dc282d16fedfed6530125ae5d52d619151
 
 COCOAPODS: 1.5.3

@@ -67,7 +67,7 @@ open class SuperDelegate: NSObject, UIApplicationDelegate {
     private var couldHandleURLInWillFinishLaunching = true
     private var couldHandleUserActivityInWillFinishLaunching = true
     
-    final public func application(_ application: UIApplication, willFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey : Any]? = nil) -> Bool {
+    final public func application(_ application: UIApplication, willFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
         guard self is ApplicationLaunched else {
             noteImproperAPIUsage("\(self) must conform to ApplicationLaunched protocol")
             return false
@@ -77,7 +77,7 @@ open class SuperDelegate: NSObject, UIApplicationDelegate {
         requestUserNotificationPermissionsIfPreviouslyRegistered()
         
         // Use notification listeners to respond to application lifecycle events to subclasses can override the default hooks.
-        applicationDidBecomeActiveListener = NotificationCenter.default.addObserver(forName: NSNotification.Name.UIApplicationDidBecomeActive, object: application, queue: OperationQueue.main) { [weak self] _ in
+        applicationDidBecomeActiveListener = NotificationCenter.default.addObserver(forName: NSNotification.Name.UIApplication.didBecomeActiveNotification, object: application, queue: OperationQueue.main) { [weak self] _ in
             self?.applicationIsInForeground = true
         }
         applicationDidEnterBackgroundListener = NotificationCenter.default.addObserver(forName: NSNotification.Name.UIApplicationDidEnterBackground, object: application, queue: OperationQueue.main) { [weak self] _ in

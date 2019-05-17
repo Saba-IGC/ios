@@ -87,14 +87,44 @@ extension Alamofire.DataRequest {
     }
 
 #if swift(>=3.2)
-    /// Adds a handler to be called once the request has finished.
-    public func responseDecodable<T: Decodable>(queue: DispatchQueue? = nil) -> Promise<T> {
+    /**
+     Returns a Promise for a Decodable
+     Adds a handler to be called once the request has finished.
+     
+     - Parameter queue: DispatchQueue, by default nil
+     - Parameter decoder: JSONDecoder, by default JSONDecoder()
+     */
+    public func responseDecodable<T: Decodable>(queue: DispatchQueue? = nil, decoder: JSONDecoder = JSONDecoder()) -> Promise<T> {
         return Promise { seal in
             responseData(queue: queue) { response in
                 switch response.result {
                 case .success(let value):
                     do {
-                        seal.fulfill(try JSONDecoder().decode(T.self, from: value))
+                        seal.fulfill(try decoder.decode(T.self, from: value))
+                    } catch {
+                        seal.reject(error)
+                    }
+                case .failure(let error):
+                    seal.reject(error)
+                }
+            }
+        }
+    }
+ 
+     /**
+     Returns a Promise for a Decodable
+     Adds a handler to be called once the request has finished.
+     
+     - Parameter queue: DispatchQueue, by default nil
+     - Parameter decoder: JSONDecoder, by default JSONDecoder()
+     */
+    public func responseDecodable<T: Decodable>(_ type: T.Type, queue: DispatchQueue? = nil, decoder: JSONDecoder = JSONDecoder()) -> Promise<T> {
+        return Promise { seal in
+            responseData(queue: queue) { response in
+                switch response.result {
+                case .success(let value):
+                    do {
+                        seal.fulfill(try decoder.decode(type, from: value))
                     } catch {
                         seal.reject(error)
                     }
@@ -136,13 +166,9 @@ extension Alamofire.DownloadRequest {
 }
 
 
-public enum PMKAlamofireOptions {
-    case response
-}
-
-
+/// Alamofire.DataResponse, but without the `result`, since the Promise represents the `Result`
 public struct PMKAlamofireDataResponse {
-    fileprivate init<T>(_ rawrsp: Alamofire.DataResponse<T>) {
+    public init<T>(_ rawrsp: Alamofire.DataResponse<T>) {
         request = rawrsp.request
         response = rawrsp.response
         data = rawrsp.data

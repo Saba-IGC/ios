@@ -6,15 +6,15 @@ target 'SabaCenter' do
   use_frameworks!
 
   # Pods for SabaCenter
-  pod 'SuperDelegate', '~> 0.9.0'
-  pod 'SwiftyJSON', '~> 4.0.0'
-  pod 'Alamofire', '~> 4.6.0'
-  pod 'Swinject', '~> 2.1.0'
-  pod 'SwiftLint', '~> 0.25.0'
-  pod 'PromiseKit', '~> 6.0'
-  pod 'PromiseKit/Alamofire', '~> 6.0'
-  pod 'PromiseKit/CoreLocation', '~> 6.0'
-  pod 'RxSwift', '~> 4.0'
-  pod 'RxCocoa', '~> 4.0'
-  pod 'FoldingCell', '~> 4.0'
+  pod 'SuperDelegate'
+  pod 'SwiftyJSON'
+  pod 'Alamofire'
+  pod 'Swinject'
+  pod 'SwiftLint'
+  pod 'PromiseKit'
+  pod 'PromiseKit/Alamofire'
+  pod 'PromiseKit/CoreLocation'
+  pod 'RxSwift'
+  pod 'RxCocoa'
+  pod 'FoldingCell'
 end
