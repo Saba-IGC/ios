@@ -6,7 +6,6 @@ target 'SabaCenter' do
   use_frameworks!
 
   # Pods for SabaCenter
-  pod 'SuperDelegate', '~> 0.9.0'
   pod 'SwiftyJSON', '~> 5.0.0'
   pod 'Alamofire', '~> 4.9.0'
   pod 'Swinject', '~> 2.6.0'

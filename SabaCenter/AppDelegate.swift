@@ -9,10 +9,9 @@
 import UIKit
 import Framework
 import Swinject
-import SuperDelegate
 
 @UIApplicationMain
-class AppDelegate: SuperDelegate, ApplicationLaunched {
+class AppDelegate: NSObject, UIApplicationDelegate {
     var window: UIWindow?
 
     let container: Container = {
@@ -39,14 +38,6 @@ class AppDelegate: SuperDelegate, ApplicationLaunched {
     override init() {
         super.init()
         ViewModelFactory.resolver = self
-    }
-
-    func setupApplication() {
-        // Setup app model, networking, logging, etc.
-    }
-
-    func loadInterface(launchItem: LaunchItem) {
-        // Override point for customization after application launch.
     }
 }
 
