@@ -1,49 +1,60 @@
 PODS:
-  - Alamofire (4.6.0)
-  - PromiseKit (6.2.0):
-    - PromiseKit/CorePromise (= 6.2.0)
-    - PromiseKit/Foundation (= 6.2.0)
-    - PromiseKit/UIKit (= 6.2.0)
-  - PromiseKit/Alamofire (6.2.0):
+  - Alamofire (4.9.0)
+  - PromiseKit (6.8.5):
+    - PromiseKit/CorePromise (= 6.8.5)
+    - PromiseKit/Foundation (= 6.8.5)
+    - PromiseKit/UIKit (= 6.8.5)
+  - PromiseKit/Alamofire (6.8.5):
     - Alamofire (~> 4.0)
     - PromiseKit/CorePromise
-  - PromiseKit/CoreLocation (6.2.0):
+  - PromiseKit/CoreLocation (6.8.5):
     - PromiseKit/CorePromise
-  - PromiseKit/CorePromise (6.2.0)
-  - PromiseKit/Foundation (6.2.0):
+  - PromiseKit/CorePromise (6.8.5)
+  - PromiseKit/Foundation (6.8.5):
     - PromiseKit/CorePromise
-  - PromiseKit/UIKit (6.2.0):
+  - PromiseKit/UIKit (6.8.5):
     - PromiseKit/CorePromise
-  - RxCocoa (4.1.2):
-    - RxSwift (~> 4.0)
-  - RxSwift (4.1.2)
+  - RxCocoa (4.5.0):
+    - RxSwift (>= 4.4.2, ~> 4.4)
+  - RxSwift (4.5.0)
   - SuperDelegate (0.9.0)
-  - SwiftLint (0.25.0)
-  - SwiftyJSON (4.0.0)
-  - Swinject (2.1.1)
+  - SwiftLint (0.31.0)
+  - SwiftyJSON (5.0.0)
+  - Swinject (2.6.2)
 
 DEPENDENCIES:
-  - Alamofire (~> 4.6.0)
-  - PromiseKit (~> 6.0)
-  - PromiseKit/Alamofire (~> 6.0)
-  - PromiseKit/CoreLocation (~> 6.0)
-  - RxCocoa (~> 4.0)
-  - RxSwift (~> 4.0)
+  - Alamofire (~> 4.9.0)
+  - PromiseKit (~> 6.8.4)
+  - PromiseKit/Alamofire (~> 6.8.4)
+  - PromiseKit/CoreLocation (~> 6.8.4)
+  - RxCocoa (~> 4.5)
+  - RxSwift (~> 4.5)
   - SuperDelegate (~> 0.9.0)
-  - SwiftLint (~> 0.25.0)
-  - SwiftyJSON (~> 4.0.0)
-  - Swinject (~> 2.1.0)
+  - SwiftLint (~> 0.31.0)
+  - SwiftyJSON (~> 5.0.0)
+  - Swinject (~> 2.6.0)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - PromiseKit
+    - RxCocoa
+    - RxSwift
+    - SuperDelegate
+    - SwiftLint
+    - SwiftyJSON
+    - Swinject
 
 SPEC CHECKSUMS:
-  Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
-  PromiseKit: ea9a155e1fd98a926ccfaf633c0fbd69851f0e7b
-  RxCocoa: d88ba0f1f6abf040011a9eb4b539324fc426843a
-  RxSwift: e49536837d9901277638493ea537394d4b55f570
+  Alamofire: afc3e7c6db61476cb45cdd23fed06bad03bbc321
+  PromiseKit: 9616b0afef31eae56ab9ce044c8ec2b8612a15cd
+  RxCocoa: cbf70265dc65a981d4ac982e513c10cf23df24a0
+  RxSwift: f172070dfd1a93d70a9ab97a5a01166206e1c575
   SuperDelegate: b70c7afddf8525217d0e074b850b8ea3cc6f8abd
-  SwiftLint: e14651157288e9e01d6e1a71db7014fb5744a8ea
-  SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
-  Swinject: afea49fd95f392b41171669f165842879c48fad6
+  SwiftLint: 7a0227733d786395817373b2d0ca799fd0093ff3
+  SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
+  Swinject: cf7458774b1b00323080a9c67e47a1ee7f9d2af1
 
-PODFILE CHECKSUM: c974bb30a3753dcec692d376599c5db6878cc5f2
+PODFILE CHECKSUM: b586f88867a30e76a622978da015adeb2867a132
 
-COCOAPODS: 1.4.0
+COCOAPODS: 1.8.1
