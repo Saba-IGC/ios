@@ -7,13 +7,13 @@ target 'SabaCenter' do
 
   # Pods for SabaCenter
   pod 'SuperDelegate', '~> 0.9.0'
-  pod 'SwiftyJSON', '~> 4.0.0'
-  pod 'Alamofire', '~> 4.6.0'
-  pod 'Swinject', '~> 2.1.0'
-  pod 'SwiftLint', '~> 0.25.0'
-  pod 'PromiseKit', '~> 6.0'
-  pod 'PromiseKit/Alamofire', '~> 6.0'
-  pod 'PromiseKit/CoreLocation', '~> 6.0'
-  pod 'RxSwift', '~> 4.0'
-  pod 'RxCocoa', '~> 4.0'
+  pod 'SwiftyJSON', '~> 5.0.0'
+  pod 'Alamofire', '~> 4.9.0'
+  pod 'Swinject', '~> 2.6.0'
+  pod 'SwiftLint', '~> 0.31.0'
+  pod 'PromiseKit', '~> 6.8.4'
+  pod 'PromiseKit/Alamofire', '~> 6.8.4'
+  pod 'PromiseKit/CoreLocation', '~> 6.8.4'
+  pod 'RxSwift', '~> 4.5'
+  pod 'RxCocoa', '~> 4.5'
 end
