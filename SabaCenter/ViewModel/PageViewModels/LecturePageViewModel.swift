@@ -8,7 +8,6 @@
 
 import Foundation
 import Framework
-import RxSwift
 
 class LecturePageViewModel: ViewModelBase {
     let lectureRepo: ILectureRepository
@@ -17,12 +16,14 @@ class LecturePageViewModel: ViewModelBase {
         self.lectureRepo = lectureRepo
     }
 
-    func getLectureList() -> Observable<[LectureViewModel]> {
-        return self.lectureRepo.getLectures().map { lectures in
-            return lectures.map { item in
-                return LectureViewModel(lecture: item)
-            }
+    func getLectureList() -> [LectureViewModel] {
+        var lectureViewModels = [LectureViewModel]()
+
+        for lectureItem in self.lectureRepo.getLectures() {
+            lectureViewModels.append(LectureViewModel(lecture: lectureItem))
         }
+
+        return lectureViewModels
     }
 
     func getLinkToLiveStream() -> String {

@@ -7,9 +7,8 @@
 //
 
 import Foundation
-import RxSwift
 
 public protocol IScheduleService {
-    func getScheduleItems() -> Observable<[ScheduleItem]>
-    func getUpcomingScheduleItem() -> Observable<ScheduleItem>
+    func getScheduleItems() -> [ScheduleItem]
+    func getUpcomingScheduleItem() -> ScheduleItem
 }

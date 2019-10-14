@@ -7,28 +7,29 @@
 //
 
 import Foundation
-import RxSwift
 
 enum CalendarEventServiceErrors: Error {
     case invalidDate
 }
 
 public class CalendarEventService: ICalendarEventService {
-    public func getEvents(forDate date: Date) -> Observable<[CalendarEventItem]> {
+    public func getEvents(forDate date: Date) -> [CalendarEventItem] {
         // todo: replace with call to web service
-        return Observable.from(optional: [
+        return [
             CalendarEventItem(name: "Mock Event 1", date: date),
             CalendarEventItem(name: "Mock Event 2", date: date)
-            ])
+            ]
     }
 
-    public func getEvents(forMonth month: Int, year: Int) -> Observable<[CalendarEventItem]> {
+    public func getEvents(forMonth month: Int, year: Int) throws -> [CalendarEventItem] {
         // todo: replace with call to web service
         let comps = DateComponents(year: year, month: month)
-        guard let date = Calendar.autoupdatingCurrent.date(from: comps) else { return Observable.error(CalendarEventServiceErrors.invalidDate) }
-        return Observable.from(optional: [
+        guard let date = Calendar.autoupdatingCurrent.date(from: comps) else {
+            throw CalendarEventServiceErrors.invalidDate
+        }
+        return [
             CalendarEventItem(name: "Mock Event 1", date: date),
             CalendarEventItem(name: "Mock Event 2", date: date)
-            ])
+        ]
     }
 }

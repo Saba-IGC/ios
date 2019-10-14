@@ -7,9 +7,8 @@
 //
 
 import Foundation
-import RxSwift
 
 public protocol IHadithService {
-    func getHadiths() -> Observable<[HadithItem]>
-    func getHadithOfTheDay() -> Observable<HadithItem>
+    func getHadiths() -> [HadithItem]
+    func getHadithOfTheDay() -> HadithItem
 }

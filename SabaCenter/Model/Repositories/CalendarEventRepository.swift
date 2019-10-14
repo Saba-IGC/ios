@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import RxSwift
 
 public class CalendarEventRepository: ICalendarEventRepository {
     private let calendarEventService: ICalendarEventService
@@ -18,22 +17,24 @@ public class CalendarEventRepository: ICalendarEventRepository {
         self.calendarEventService = calendarEventService
     }
 
-    public func getEvents(forDate date: Date) -> Observable<[CalendarEventItem]> {
+    public func getEvents(forDate date: Date) -> [CalendarEventItem] {
         if let events = dateEventsCache[date] {
-            return Observable.from(optional: events)
+            return events
         } else {
             return self.calendarEventService.getEvents(forDate: date)
         }
     }
 
-    public func getEvents(forMonth month: Int, year: Int) -> Observable<[CalendarEventItem]> {
+    public func getEvents(forMonth month: Int, year: Int) throws -> [CalendarEventItem] {
         var comps = DateComponents()
         comps.month = month
         comps.year = year
+
         if let events = monthEventsCache[comps] {
-            return Observable.from(optional: events)
+            return events
         } else {
-            return self.calendarEventService.getEvents(forMonth: month, year: year)
+            return try self.calendarEventService.getEvents(forMonth: month, year: year)
         }
+
     }
 }

@@ -71,8 +71,6 @@
 		629C9089204BF71F006E1438 /* INavigationAwareViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629C9088204BF71F006E1438 /* INavigationAwareViewModel.swift */; };
 		629C908B204BFA7F006E1438 /* INavigatingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629C908A204BFA7F006E1438 /* INavigatingViewModel.swift */; };
 		629C908D204E5AD2006E1438 /* DetailPageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629C908C204E5AD2006E1438 /* DetailPageViewModel.swift */; };
-		629C9093204E7F67006E1438 /* NavigateTestPageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629C9092204E7F67006E1438 /* NavigateTestPageViewModel.swift */; };
-		629C9095204E83E6006E1438 /* NavigateTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629C9094204E83E6006E1438 /* NavigateTestViewController.swift */; };
 		629C909A204E8B18006E1438 /* UINavigationControllerBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629C9099204E8B18006E1438 /* UINavigationControllerBase.swift */; };
 		62E882682067245500BDBE47 /* ICalendarEventRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E882672067245500BDBE47 /* ICalendarEventRepository.swift */; };
 		62E8826A2067246B00BDBE47 /* IDailyPrayerRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E882692067246B00BDBE47 /* IDailyPrayerRepository.swift */; };
@@ -83,6 +81,8 @@
 		62E8827420672FF600BDBE47 /* CalendarEventRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E8827320672FF600BDBE47 /* CalendarEventRepository.swift */; };
 		62E88276206732E700BDBE47 /* ICalendarEventService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E88275206732E700BDBE47 /* ICalendarEventService.swift */; };
 		62E882782067332000BDBE47 /* CalendarEventService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E882772067332000BDBE47 /* CalendarEventService.swift */; };
+		87139FD22353C06D003D4EB0 /* LectureTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87139FD12353C06D003D4EB0 /* LectureTableViewDataSource.swift */; };
+		87139FD42353CBC3003D4EB0 /* ScheduleTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87139FD32353CBC3003D4EB0 /* ScheduleTableViewDataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -186,8 +186,6 @@
 		629C9088204BF71F006E1438 /* INavigationAwareViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = INavigationAwareViewModel.swift; sourceTree = "<group>"; };
 		629C908A204BFA7F006E1438 /* INavigatingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = INavigatingViewModel.swift; sourceTree = "<group>"; };
 		629C908C204E5AD2006E1438 /* DetailPageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPageViewModel.swift; sourceTree = "<group>"; };
-		629C9092204E7F67006E1438 /* NavigateTestPageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigateTestPageViewModel.swift; sourceTree = "<group>"; };
-		629C9094204E83E6006E1438 /* NavigateTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigateTestViewController.swift; sourceTree = "<group>"; };
 		629C9099204E8B18006E1438 /* UINavigationControllerBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationControllerBase.swift; sourceTree = "<group>"; };
 		62E882672067245500BDBE47 /* ICalendarEventRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICalendarEventRepository.swift; sourceTree = "<group>"; };
 		62E882692067246B00BDBE47 /* IDailyPrayerRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDailyPrayerRepository.swift; sourceTree = "<group>"; };
@@ -198,6 +196,8 @@
 		62E8827320672FF600BDBE47 /* CalendarEventRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarEventRepository.swift; sourceTree = "<group>"; };
 		62E88275206732E700BDBE47 /* ICalendarEventService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICalendarEventService.swift; sourceTree = "<group>"; };
 		62E882772067332000BDBE47 /* CalendarEventService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarEventService.swift; sourceTree = "<group>"; };
+		87139FD12353C06D003D4EB0 /* LectureTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LectureTableViewDataSource.swift; sourceTree = "<group>"; };
+		87139FD32353CBC3003D4EB0 /* ScheduleTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleTableViewDataSource.swift; sourceTree = "<group>"; };
 		9F3E0E19BC7B1C37853FB55A /* Pods_SabaCenter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SabaCenter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -241,6 +241,8 @@
 		13A941C7208D81170046BE8D /* DataSources */ = {
 			isa = PBXGroup;
 			children = (
+				87139FD12353C06D003D4EB0 /* LectureTableViewDataSource.swift */,
+				87139FD32353CBC3003D4EB0 /* ScheduleTableViewDataSource.swift */,
 			);
 			path = DataSources;
 			sourceTree = "<group>";
@@ -368,7 +370,6 @@
 				13E38E842079C16A0018B5AE /* CustomControls */,
 				629C9022204B74E4006E1438 /* MasterViewController.swift */,
 				629C9024204B74E4006E1438 /* DetailViewController.swift */,
-				629C9094204E83E6006E1438 /* NavigateTestViewController.swift */,
 				130DEBDE2054BAD8003F7811 /* HomeViewController.swift */,
 				130DEBE02054BC9B003F7811 /* LectureViewController.swift */,
 				130DEBE22054BD18003F7811 /* ScheduleViewController.swift */,
@@ -385,7 +386,6 @@
 				13655521205656D100C4457A /* QuestionDetailViewModel.swift */,
 				629C906B204B7B42006E1438 /* MainPageViewModel.swift */,
 				629C908C204E5AD2006E1438 /* DetailPageViewModel.swift */,
-				629C9092204E7F67006E1438 /* NavigateTestPageViewModel.swift */,
 				136555192056349200C4457A /* HomePageViewModel.swift */,
 				1365551B205648C700C4457A /* LecturePageViewModel.swift */,
 				1365551D205650A900C4457A /* SchedulePageViewModel.swift */,
@@ -689,7 +689,6 @@
 				62E8826A2067246B00BDBE47 /* IDailyPrayerRepository.swift in Sources */,
 				13E38E7B207998240018B5AE /* HadithRepository.swift in Sources */,
 				62E882682067245500BDBE47 /* ICalendarEventRepository.swift in Sources */,
-				629C9095204E83E6006E1438 /* NavigateTestViewController.swift in Sources */,
 				13971A8B205F1342001F51AE /* QuestionItem.swift in Sources */,
 				13E38E7D20799B6D0018B5AE /* IHadithService.swift in Sources */,
 				1365551C205648C700C4457A /* LecturePageViewModel.swift in Sources */,
@@ -704,7 +703,7 @@
 				130DEBE52054BD7A003F7811 /* ForumViewController.swift in Sources */,
 				13971A85205F0062001F51AE /* HadithItem.swift in Sources */,
 				629C9070204B7BAB006E1438 /* PlaceholderService.swift in Sources */,
-				629C9093204E7F67006E1438 /* NavigateTestPageViewModel.swift in Sources */,
+				87139FD42353CBC3003D4EB0 /* ScheduleTableViewDataSource.swift in Sources */,
 				13655520205654B700C4457A /* AskPageViewModel.swift in Sources */,
 				629C9025204B74E4006E1438 /* DetailViewController.swift in Sources */,
 				13971A83205EFB7C001F51AE /* ScheduleItem.swift in Sources */,
@@ -720,6 +719,7 @@
 				13E38E7F20799CE40018B5AE /* HadithService.swift in Sources */,
 				629C906A204B7B25006E1438 /* ItemViewModel.swift in Sources */,
 				13DE1F2D2079C7880092A77F /* HadithViewModel.swift in Sources */,
+				87139FD22353C06D003D4EB0 /* LectureTableViewDataSource.swift in Sources */,
 				13E38E792079971B0018B5AE /* IHadithRepository.swift in Sources */,
 				13E38E812079B9080018B5AE /* LectureCell.swift in Sources */,
 				138EC76120BA3E5400945785 /* ScheduleIViewModel.swift in Sources */,

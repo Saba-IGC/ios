@@ -23,7 +23,6 @@ class AppDelegate: NSObject, UIApplicationDelegate {
         container.register(ILectureRepository.self) { resolver in LectureRepository(lectureService: resolver.resolve(ILectureService.self)!)}.inObjectScope(.container)
         container.register(MainPageViewModel.self) { resolver in MainPageViewModel(placeholderRepo: resolver.resolve(IPlaceholderRepository.self)!, navigationService: resolver.resolve(INavigationService.self)!) }
         container.register(DetailPageViewModel.self) { resolver in DetailPageViewModel(navigationService: resolver.resolve(INavigationService.self)!) }
-        container.register(NavigateTestPageViewModel.self) { _ in NavigateTestPageViewModel() }
         container.register(LecturePageViewModel.self) { resolver in LecturePageViewModel(lectureRepo: resolver.resolve(ILectureRepository.self)!)}
         container.register(SchedulePageViewModel.self) {resolver in SchedulePageViewModel(scheduleRepo: resolver.resolve(IScheduleRepository.self)!)}
         container.register(IScheduleService.self) { _ in ScheduleService()}.inObjectScope(.container)

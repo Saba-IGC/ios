@@ -8,7 +8,6 @@
 
 import Foundation
 import Framework
-import RxSwift
 
 class SchedulePageViewModel: ViewModelBase {
 
@@ -18,17 +17,18 @@ class SchedulePageViewModel: ViewModelBase {
         self.scheduleRepo = scheduleRepo
     }
 
-    func getListOfScheduleItems() -> Observable<[ScheduleViewModel]> {
+    func getListOfScheduleItems() -> [ScheduleViewModel] {
 
-        return self.scheduleRepo.getScheduleItems().map { schedules in
-            return schedules.map { item in
-                return ScheduleViewModel(schedule: item)
-            }
+        var scheduleItems = [ScheduleViewModel]()
+
+        for scheduleItem in self.scheduleRepo.getScheduleItems() {
+            scheduleItems.append(ScheduleViewModel(schedule: scheduleItem))
         }
+
+        return scheduleItems
     }
 
     func searchSchedule() {
-
         //scheduleRepo.searchSchedules()
     }
 }

@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import RxSwift
 
 public class ScheduleRepository: IScheduleRepository {
 
@@ -18,11 +17,11 @@ public class ScheduleRepository: IScheduleRepository {
         self.scheduleService = scheduleService
     }
 
-    public func getScheduleItems() -> Observable<[ScheduleItem]> {
+    public func getScheduleItems() -> [ScheduleItem] {
         return scheduleService.getScheduleItems()
     }
 
-    public func getUpcomingScheduleItem() -> Observable<ScheduleItem> {
+    public func getUpcomingScheduleItem() -> ScheduleItem {
         return scheduleService.getUpcomingScheduleItem()
     }
 

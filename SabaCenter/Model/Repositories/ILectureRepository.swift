@@ -7,10 +7,9 @@
 //
 
 import Foundation
-import RxSwift
 
 public protocol ILectureRepository {
-    func getLectures() -> Observable<[LectureItem]>
-    func getLiveStream() -> Observable<LectureItem>
+    func getLectures() -> [LectureItem]
+    func getLiveStream() -> LectureItem
     func searchLectures()
 }

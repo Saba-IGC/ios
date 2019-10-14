@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import RxSwift
 
 public class LectureRepository: ILectureRepository {
     private let lectureService: ILectureService
@@ -17,11 +16,11 @@ public class LectureRepository: ILectureRepository {
         self.lectureService = lectureService
     }
 
-    public func getLectures() -> Observable<[LectureItem]> {
+    public func getLectures() -> [LectureItem] {
         return lectureService.getLectures()
     }
 
-    public func getLiveStream() -> Observable<LectureItem> {
+    public func getLiveStream() -> LectureItem {
         return lectureService.getLiveStream()
     }
 

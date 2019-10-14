@@ -7,17 +7,15 @@
 //
 
 import Foundation
-import RxSwift
 
 public class HadithService: IHadithService {
 
-    public func getHadiths() -> Observable<[HadithItem]> {
+    public func getHadiths() -> [HadithItem] {
         // todo: replace with call to web service
-        return Observable.from(optional: [
-            HadithItem(description: "Be like the flower that gives its fragrance to even the hand that crushes it", source: "Reputable source", quotee: "Imam Ali (s)")])
+        return [HadithItem(description: "Be like the flower that gives its fragrance to even the hand that crushes it", source: "Reputable source", quotee: "Imam Ali (s)")]
     }
 
-    public func getHadithOfTheDay() -> Observable<HadithItem> {
-        return Observable.of(HadithItem(description: "Be like the flower that gives its fragrance to even the hand that crushes it", source: "Reputable source", quotee: "Imam Ali (s)"))
+    public func getHadithOfTheDay() -> HadithItem {
+        return HadithItem(description: "Be like the flower that gives its fragrance to even the hand that crushes it", source: "Reputable source", quotee: "Imam Ali (s)")
     }
 }

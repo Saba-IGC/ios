@@ -7,9 +7,8 @@
 //
 
 import Foundation
-import RxSwift
 
 public protocol ICalendarEventRepository {
-    func getEvents(forDate date: Date) -> Observable<[CalendarEventItem]>
-    func getEvents(forMonth month: Int, year: Int) -> Observable<[CalendarEventItem]>
+    func getEvents(forDate date: Date) -> [CalendarEventItem]
+    func getEvents(forMonth month: Int, year: Int) throws -> [CalendarEventItem]
 }

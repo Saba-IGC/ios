@@ -7,10 +7,9 @@
 //
 
 import Foundation
-import RxSwift
 
 public protocol IScheduleRepository {
-    func getScheduleItems() -> Observable<[ScheduleItem]>
-    func getUpcomingScheduleItem() -> Observable<ScheduleItem>
+    func getScheduleItems() -> [ScheduleItem]
+    func getUpcomingScheduleItem() -> ScheduleItem
     func searchSchedule(searchParameter: String)
 }

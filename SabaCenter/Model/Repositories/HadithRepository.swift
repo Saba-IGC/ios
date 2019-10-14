@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import RxSwift
 
 public class HadithRepository: IHadithRepository {
 
@@ -18,11 +17,11 @@ public class HadithRepository: IHadithRepository {
         self.hadithService = hadithService
     }
 
-    public func getHadiths() -> Observable<[HadithItem]> {
+    public func getHadiths() -> [HadithItem] {
         return self.hadithService.getHadiths()
     }
 
-    public func getHadithOfTheDay() -> Observable<HadithItem> {
+    public func getHadithOfTheDay() -> HadithItem {
         return self.hadithService.getHadithOfTheDay()
     }
 }
