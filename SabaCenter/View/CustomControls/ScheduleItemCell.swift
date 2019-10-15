@@ -24,9 +24,16 @@ class ScheduleItemCell: UITableViewCell {
         // Configure the view for the selected state
     }
 
-    func updateCell(schedule: ScheduleViewModel) {
+    func update(schedule: ScheduleViewModel) {
+
         titleLabel.text = schedule.title
         descriptionLabel.text = schedule.description
+
+        if self.tag % 2 == 0 {
+            self.backgroundColor = UIColor.CellBackgroundColor.normalBackgroundColor
+        } else {
+            self.backgroundColor = UIColor.CellBackgroundColor.alternateBackgroundColor
+        }
 
         if schedule.importance == ScheduleItem.Importance.high {
             titleLabel.textColor = UIColor.red

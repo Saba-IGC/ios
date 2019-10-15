@@ -8,48 +8,44 @@
 
 import UIKit
 
-class ScheduleTableViewDataSource: NSObject, UITableViewDataSource, UITableViewDelegate {
+class ScheduleTableViewDataSource: NSObject, UITableViewDataSource {
 
-    let normalBackgroundColor = UIColor.white
-    let alternateBackgroundColor = UIColor(red: 0.98, green: 0.98, blue: 0.98, alpha: 1.0)
     private var scheduleCellExpanded = false
     private var previouslySelectedIndexPath: IndexPath!
-    private let cellIdentifier = "ScheduleCellIdentifier"
-    var scheduleItems = [ScheduleItem]()
+    private let cellIdentifier = "ScheduleCell"
+    var scheduleItems = [ScheduleViewModel]()
 
-    init(scheduleItems: [ScheduleItem]) {
-        self.scheduleItems = scheduleItems
+    init(scheduleItems: [ScheduleViewModel]?) {
+        super.init()
+        self.scheduleItems = scheduleItems ?? [ScheduleViewModel]()
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier) else {
+        guard let cell: ScheduleItemCell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier) as? ScheduleItemCell else {
             return ScheduleItemCell(style: .default, reuseIdentifier: cellIdentifier)
         }
-        let row = indexPath.row
 
-        if row % 2 == 0 {
-            cell.backgroundColor = normalBackgroundColor
-        } else {
-            cell.backgroundColor = alternateBackgroundColor
-        }
+        let scheduleItem = self.scheduleItems[indexPath.row]
+        cell.tag = indexPath.row
+        cell.update(schedule: scheduleItem)
 
         return cell
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        //First click on the table, or all the cells are compressed
-        if previouslySelectedIndexPath == nil {
-            scheduleCellExpanded = true
-            previouslySelectedIndexPath = indexPath
+        // First click on the table, or all the cells are compressed
+        if self.previouslySelectedIndexPath == nil {
+            self.scheduleCellExpanded = true
+            self.previouslySelectedIndexPath = indexPath
         }
-            //User clicks on the cell that was already selected
-        else if scheduleCellExpanded && indexPath == previouslySelectedIndexPath {
-            scheduleCellExpanded = false
-            previouslySelectedIndexPath = nil
+            // User clicks on the cell that was already selected
+        else if self.scheduleCellExpanded && indexPath == self.previouslySelectedIndexPath {
+            self.scheduleCellExpanded = false
+           self.previouslySelectedIndexPath = nil
         }
-            //User clicks on another cell
-        else if indexPath != previouslySelectedIndexPath  && scheduleCellExpanded {
-            previouslySelectedIndexPath = indexPath
+            // User clicks on another cell
+        else if indexPath != self.previouslySelectedIndexPath  && self.scheduleCellExpanded {
+            self.previouslySelectedIndexPath = indexPath
         }
 
         tableView.beginUpdates()
@@ -58,12 +54,16 @@ class ScheduleTableViewDataSource: NSObject, UITableViewDataSource, UITableViewD
 
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if indexPath.row == tableView.indexPathForSelectedRow?.row {
-            return scheduleCellExpanded ? 125 : 50 }
+            return self.scheduleCellExpanded ? 125 : 50 }
 
         return 50
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return scheduleItems.count
+        return self.scheduleItems.count
+    }
+
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
     }
 }

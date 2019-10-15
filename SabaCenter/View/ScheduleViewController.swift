@@ -15,10 +15,16 @@ class ScheduleViewController: UIViewControllerBase<SchedulePageViewModel>, UITab
 
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
 
-        // Prevents empty cells from appearing
-        scheduleTableView.tableFooterView = UIView()
-        scheduleTableView.delegate = self
+    override func viewDidAppear(_ animated: Bool) {
+
+        let scheduleItems = viewModel?.getListOfScheduleItems()
+        let scheduleTableViewDataSource = ScheduleTableViewDataSource(scheduleItems: scheduleItems)
+
+        scheduleTableView.register(ScheduleItemCell.self, forCellReuseIdentifier: "ScheduleCell")
+        scheduleTableView.dataSource = scheduleTableViewDataSource
+        scheduleTableView.reloadData()
     }
 
 }

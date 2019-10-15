@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LectureCell: UITableViewCell {
+class LectureItemCell: UITableViewCell {
 
     @IBOutlet weak var videoButton: UIButton!
     @IBOutlet weak var audioButton: UIButton!
@@ -28,10 +28,16 @@ class LectureCell: UITableViewCell {
         // Configure the view for the selected state
     }
 
-    func updateCell (lecture: LectureViewModel) {
+    func update (lecture: LectureViewModel) {
         titleLabel.text = lecture.title
         descriptionLabel.text = lecture.description
         dateLabel.text = lecture.date
         speakerNameLabel.text = lecture.speakerName
+
+        if self.tag % 2 == 0 {
+            self.backgroundColor = UIColor.CellBackgroundColor.normalBackgroundColor
+        } else {
+            self.backgroundColor = UIColor.CellBackgroundColor.alternateBackgroundColor
+        }
     }
 }

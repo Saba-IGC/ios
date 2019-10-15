@@ -11,7 +11,7 @@ import UIKit
 import Framework
 import AVKit
 
-class LectureViewController: UIViewControllerBase<LecturePageViewModel>, UITableViewDelegate {
+class LectureViewController: UIViewControllerBase<LecturePageViewModel> {
     @IBOutlet weak var liveStreamButton: UIButton!
     @IBOutlet weak var lecturesTableView: UITableView!
 
@@ -22,13 +22,16 @@ class LectureViewController: UIViewControllerBase<LecturePageViewModel>, UITable
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Prevents empty cells from appearing
-        lecturesTableView.tableFooterView = UIView()
+    }
+
+    override func viewDidAppear(_ animated: Bool) {
 
         let lectureItems = viewModel?.getLectureList()
         let lectureTableViewDataSource = LectureTableViewDataSource(lectureItems: lectureItems)
+
+        lecturesTableView.register(LectureItemCell.self, forCellReuseIdentifier: "LectureCell")
         lecturesTableView.dataSource = lectureTableViewDataSource
-        lecturesTableView.delegate = lectureTableViewDataSource
+        lecturesTableView.reloadData()
     }
 
 }

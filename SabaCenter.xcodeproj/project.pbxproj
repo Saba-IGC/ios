@@ -38,7 +38,7 @@
 		13E38E7B207998240018B5AE /* HadithRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E38E7A207998240018B5AE /* HadithRepository.swift */; };
 		13E38E7D20799B6D0018B5AE /* IHadithService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E38E7C20799B6D0018B5AE /* IHadithService.swift */; };
 		13E38E7F20799CE40018B5AE /* HadithService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E38E7E20799CE40018B5AE /* HadithService.swift */; };
-		13E38E812079B9080018B5AE /* LectureCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E38E802079B9080018B5AE /* LectureCell.swift */; };
+		13E38E812079B9080018B5AE /* LectureItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E38E802079B9080018B5AE /* LectureItemCell.swift */; };
 		13E38E832079BC300018B5AE /* LectureViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E38E822079BC300018B5AE /* LectureViewModel.swift */; };
 		6202561320A91339004628C6 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6202561220A91339004628C6 /* AVKit.framework */; };
 		629C9021204B74E4006E1438 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629C9020204B74E4006E1438 /* AppDelegate.swift */; };
@@ -83,6 +83,7 @@
 		62E882782067332000BDBE47 /* CalendarEventService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E882772067332000BDBE47 /* CalendarEventService.swift */; };
 		87139FD22353C06D003D4EB0 /* LectureTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87139FD12353C06D003D4EB0 /* LectureTableViewDataSource.swift */; };
 		87139FD42353CBC3003D4EB0 /* ScheduleTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87139FD32353CBC3003D4EB0 /* ScheduleTableViewDataSource.swift */; };
+		87528C9D235590FA00A1A8A6 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87528C9C235590FA00A1A8A6 /* Colors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -148,7 +149,7 @@
 		13E38E7A207998240018B5AE /* HadithRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HadithRepository.swift; sourceTree = "<group>"; };
 		13E38E7C20799B6D0018B5AE /* IHadithService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IHadithService.swift; sourceTree = "<group>"; };
 		13E38E7E20799CE40018B5AE /* HadithService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HadithService.swift; sourceTree = "<group>"; };
-		13E38E802079B9080018B5AE /* LectureCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LectureCell.swift; sourceTree = "<group>"; };
+		13E38E802079B9080018B5AE /* LectureItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LectureItemCell.swift; sourceTree = "<group>"; };
 		13E38E822079BC300018B5AE /* LectureViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LectureViewModel.swift; sourceTree = "<group>"; };
 		3BBA944A5C0E23D30B133977 /* Pods-SabaCenter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SabaCenter.release.xcconfig"; path = "Pods/Target Support Files/Pods-SabaCenter/Pods-SabaCenter.release.xcconfig"; sourceTree = "<group>"; };
 		6202561220A91339004628C6 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
@@ -198,6 +199,7 @@
 		62E882772067332000BDBE47 /* CalendarEventService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarEventService.swift; sourceTree = "<group>"; };
 		87139FD12353C06D003D4EB0 /* LectureTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LectureTableViewDataSource.swift; sourceTree = "<group>"; };
 		87139FD32353CBC3003D4EB0 /* ScheduleTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleTableViewDataSource.swift; sourceTree = "<group>"; };
+		87528C9C235590FA00A1A8A6 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		9F3E0E19BC7B1C37853FB55A /* Pods_SabaCenter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SabaCenter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -250,7 +252,7 @@
 		13E38E842079C16A0018B5AE /* CustomControls */ = {
 			isa = PBXGroup;
 			children = (
-				13E38E802079B9080018B5AE /* LectureCell.swift */,
+				13E38E802079B9080018B5AE /* LectureItemCell.swift */,
 				1301443A20BB7C4F004979E8 /* ScheduleItemCell.swift */,
 			);
 			path = CustomControls;
@@ -298,6 +300,7 @@
 		629C901F204B74E4006E1438 /* SabaCenter */ = {
 			isa = PBXGroup;
 			children = (
+				87528C9B235590E400A1A8A6 /* Utilities */,
 				629C9063204B7AA1006E1438 /* View */,
 				629C9062204B7A8D006E1438 /* ViewModel */,
 				629C9061204B7A82006E1438 /* Model */,
@@ -467,6 +470,14 @@
 				629C9099204E8B18006E1438 /* UINavigationControllerBase.swift */,
 			);
 			path = navigation;
+			sourceTree = "<group>";
+		};
+		87528C9B235590E400A1A8A6 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				87528C9C235590FA00A1A8A6 /* Colors.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -685,6 +696,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				629C9077204B7C95006E1438 /* Item.swift in Sources */,
+				87528C9D235590FA00A1A8A6 /* Colors.swift in Sources */,
 				130DEBE12054BC9B003F7811 /* LectureViewController.swift in Sources */,
 				62E8826A2067246B00BDBE47 /* IDailyPrayerRepository.swift in Sources */,
 				13E38E7B207998240018B5AE /* HadithRepository.swift in Sources */,
@@ -721,7 +733,7 @@
 				13DE1F2D2079C7880092A77F /* HadithViewModel.swift in Sources */,
 				87139FD22353C06D003D4EB0 /* LectureTableViewDataSource.swift in Sources */,
 				13E38E792079971B0018B5AE /* IHadithRepository.swift in Sources */,
-				13E38E812079B9080018B5AE /* LectureCell.swift in Sources */,
+				13E38E812079B9080018B5AE /* LectureItemCell.swift in Sources */,
 				138EC76120BA3E5400945785 /* ScheduleIViewModel.swift in Sources */,
 				62E882782067332000BDBE47 /* CalendarEventService.swift in Sources */,
 				138EC75920BA23D800945785 /* IScheduleRepository.swift in Sources */,

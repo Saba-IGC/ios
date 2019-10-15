@@ -17,13 +17,9 @@ class LecturePageViewModel: ViewModelBase {
     }
 
     func getLectureList() -> [LectureViewModel] {
-        var lectureViewModels = [LectureViewModel]()
+        let lectureList = self.lectureRepo.getLectures().map { item in LectureViewModel(lecture: item) }
 
-        for lectureItem in self.lectureRepo.getLectures() {
-            lectureViewModels.append(LectureViewModel(lecture: lectureItem))
-        }
-
-        return lectureViewModels
+        return lectureList
     }
 
     func getLinkToLiveStream() -> String {

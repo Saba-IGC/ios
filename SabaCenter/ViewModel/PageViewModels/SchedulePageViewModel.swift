@@ -19,10 +19,8 @@ class SchedulePageViewModel: ViewModelBase {
 
     func getListOfScheduleItems() -> [ScheduleViewModel] {
 
-        var scheduleItems = [ScheduleViewModel]()
-
-        for scheduleItem in self.scheduleRepo.getScheduleItems() {
-            scheduleItems.append(ScheduleViewModel(schedule: scheduleItem))
+        let scheduleItems = self.scheduleRepo.getScheduleItems().map { item in
+            ScheduleViewModel(schedule: item)
         }
 
         return scheduleItems
