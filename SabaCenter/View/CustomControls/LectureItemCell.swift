@@ -17,6 +17,7 @@ class LectureItemCell: UITableViewCell {
     @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var speakerNameLabel: UILabel!
     @IBOutlet weak var dateLabel: UILabel!
+
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -29,10 +30,10 @@ class LectureItemCell: UITableViewCell {
     }
 
     func update (lecture: LectureViewModel) {
-        titleLabel.text = lecture.title
-        descriptionLabel.text = lecture.description
-        dateLabel.text = lecture.date
-        speakerNameLabel.text = lecture.speakerName
+        self.titleLabel.text = lecture.title
+        self.descriptionLabel.text = lecture.description
+        self.dateLabel.text = lecture.date
+        self.speakerNameLabel.text = lecture.speakerName
 
         if self.tag % 2 == 0 {
             self.backgroundColor = UIColor.CellBackgroundColor.normalBackgroundColor

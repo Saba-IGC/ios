@@ -12,6 +12,7 @@ import Framework
 
 class ScheduleViewController: UIViewControllerBase<SchedulePageViewModel>, UITableViewDelegate {
     @IBOutlet var scheduleTableView: UITableView!
+    var scheduleTableViewDataSource: ScheduleTableViewDataSource!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,10 +21,10 @@ class ScheduleViewController: UIViewControllerBase<SchedulePageViewModel>, UITab
     override func viewDidAppear(_ animated: Bool) {
 
         let scheduleItems = viewModel?.getListOfScheduleItems()
-        let scheduleTableViewDataSource = ScheduleTableViewDataSource(scheduleItems: scheduleItems)
+        self.scheduleTableViewDataSource = ScheduleTableViewDataSource(scheduleItems: scheduleItems)
 
-        scheduleTableView.register(ScheduleItemCell.self, forCellReuseIdentifier: "ScheduleCell")
         scheduleTableView.dataSource = scheduleTableViewDataSource
+        scheduleTableView.delegate = scheduleTableViewDataSource
         scheduleTableView.reloadData()
     }
 

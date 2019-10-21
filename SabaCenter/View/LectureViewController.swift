@@ -14,6 +14,7 @@ import AVKit
 class LectureViewController: UIViewControllerBase<LecturePageViewModel> {
     @IBOutlet weak var liveStreamButton: UIButton!
     @IBOutlet weak var lecturesTableView: UITableView!
+    var lectureTableViewDataSource: LectureTableViewDataSource!
 
     @IBAction func liveStreamButtonTouchUpInside(_ sender: UIButton) {
 
@@ -27,11 +28,11 @@ class LectureViewController: UIViewControllerBase<LecturePageViewModel> {
     override func viewDidAppear(_ animated: Bool) {
 
         let lectureItems = viewModel?.getLectureList()
-        let lectureTableViewDataSource = LectureTableViewDataSource(lectureItems: lectureItems)
+        self.lectureTableViewDataSource = LectureTableViewDataSource(lectureItems: lectureItems)
 
-        lecturesTableView.register(LectureItemCell.self, forCellReuseIdentifier: "LectureCell")
-        lecturesTableView.dataSource = lectureTableViewDataSource
-        lecturesTableView.reloadData()
+        self.lecturesTableView.dataSource = self.lectureTableViewDataSource
+        self.lecturesTableView.delegate = self.lectureTableViewDataSource
+        self.lecturesTableView.reloadData()
     }
 
 }
