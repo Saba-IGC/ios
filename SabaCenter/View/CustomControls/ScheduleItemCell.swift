@@ -26,8 +26,8 @@ class ScheduleItemCell: UITableViewCell {
 
     func update(schedule: ScheduleViewModel) {
 
-        titleLabel.text = schedule.title
-        descriptionLabel.text = schedule.description
+        self.titleLabel.text = schedule.title
+        self.descriptionLabel.text = schedule.description
 
         if self.tag % 2 == 0 {
             self.backgroundColor = UIColor.CellBackgroundColor.normalBackgroundColor
@@ -36,7 +36,7 @@ class ScheduleItemCell: UITableViewCell {
         }
 
         if schedule.importance == ScheduleItem.Importance.high {
-            titleLabel.textColor = UIColor.red
+            self.titleLabel.textColor = UIColor.red
         }
     }
 }

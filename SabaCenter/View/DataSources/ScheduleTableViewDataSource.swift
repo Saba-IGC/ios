@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import Foundation
 
-class ScheduleTableViewDataSource: NSObject, UITableViewDataSource {
+class ScheduleTableViewDataSource: NSObject, UITableViewDataSource, UITableViewDelegate {
 
     private var scheduleCellExpanded = false
     private var previouslySelectedIndexPath: IndexPath!

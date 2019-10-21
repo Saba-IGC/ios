@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import Foundation
 
-class LectureTableViewDataSource: NSObject, UITableViewDataSource {
+class LectureTableViewDataSource: NSObject, UITableViewDataSource, UITableViewDelegate {
 
     private var lectureCellExpanded = false
     private var previouslySelectedIndexPath: IndexPath!

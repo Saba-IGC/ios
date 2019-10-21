@@ -280,11 +280,11 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HDz-4S-Cy2">
-                                            <rect key="frame" x="12" y="96" width="46" height="35"/>
+                                            <rect key="frame" x="12" y="96" width="66" height="35"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="35" id="j01-BE-YSd"/>
                                             </constraints>
-                                            <state key="normal" title="Button"/>
+                                            <state key="normal" title="Reminder"/>
                                         </button>
                                     </subviews>
                                     <constraints>
